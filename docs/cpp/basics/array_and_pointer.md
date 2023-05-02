@@ -1,6 +1,6 @@
 # C/C++中数组做参数退化为指针
 
-## **面试高频指数：★★★★☆**
+**面试高频指数：★★★★☆**
 
 接着[sizeof和strlen函数](https://csguide.cn/cpp/basics/sizeof_and_strlen.html)这个话题
 

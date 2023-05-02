@@ -1,38 +1,46 @@
-# class 和 struct 区别
+#  C++ 中 class 和 struct 区别
+
 **面试高频指数：★★★☆☆**
 
 C++ 中为了兼容 C 语言而保留了 C 语言的 struct 关键字，并且加以扩充了含义。
+
 在 C 语言中，struct 只能包含成员变量，不能包含成员函数。
+
 而在 C++ 中，struct 类似于 class，既可以包含成员变量，又可以包含成员函数。
+
+## 不同点
+
 C++ 中的 struct 和 class 基本是通用的，唯有几个细节不同：
 
-* class 中类中的成员默认都是 private 属性的；
+* **class 中类中的成员默认都是 private 属性的。**
 
-* 而在 struct 中结构体中的成员默认都是 public 属性的。
+* **而在 struct 中结构体中的成员默认都是 public 属性的。**
 
-* class 继承默认是 private 继承，而 struct 继承默认是 public 继承。
+* **class 继承默认是 private 继承，而 struct 继承默认是 public 继承。**
 
-* class 可以用于定义模板参数，struct 不能用于定义模板参数。
+* **class 可以用于定义模板参数，struct 不能用于定义模板参数。**
 
-  意思是这样可以：
+意思是这样可以：
 
-  ```cpp
-  template <class T>
-  struct  Person {
-  public:
-      T age;
-  };
-  ```
+```cpp
+template <class T>
+struct  Person {
+public:
+    T age;
+};
+```
 
-  但是这样就会编译报错:
+但是这样就会编译报错:
 
-  ```cpp
-  template <struct T>
-  struct  Person {
-  public:
-      T age;
-  };
-  ```
+```cpp
+template <struct T>
+struct  Person {
+public:
+    T age;
+};
+```
+
+## 使用习惯
 实际使用中，struct 我们通常用来定义一些 POD(plain old data)
 
 POD是 C++ 定义的一类数据结构概念，比如 int、float 等都是 POD 类型的。
