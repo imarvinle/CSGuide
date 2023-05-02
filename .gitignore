@@ -1,0 +1,14 @@
+.vscode
+*.txt
+*.bat
+node_modules/
+docs/.gitignore
+docs/roadmap/
+docs/books/
+docs/aboutme/
+docs/offer/
+docs/cpp/
+docs/resource/
+docs/systemdesign/
+docs/.vuepress/dist/
+yarn.lock
