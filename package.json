@@ -1,0 +1,21 @@
+{
+  "name": "csguide",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "xiaobei",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
+  },
+  "devDependencies": {
+    "@vssue/api-github-v3": "^1.4.7",
+    "@vuepress/plugin-back-to-top": "^1.9.9",
+    "@vuepress/plugin-pwa": "^1.9.9",
+    "vuepress": "^1.9.9",
+    "vuepress-plugin-seo": "0.1.4",
+    "vuepress-plugin-sitemap": "^2.3.1",
+    "screenfull": "^5.1.0"
+  }
+}
