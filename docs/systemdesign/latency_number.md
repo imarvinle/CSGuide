@@ -11,7 +11,7 @@
 这些延迟数据有助于理解存储系统的性能差异，了解SSD和传统硬盘的访问速度差别，可以在设计存储系统或选择存储硬件时做出更好的决策。
 
 
-本文主要数据来自于 Google [Jeff Dean](http://research.google.com/people/jeff/) 的一次演进:
+本文主要数据来自于 Google [Jeff Dean](http://research.google.com/people/jeff/) 的一次演讲:
 [Building Scalable Web Applications with Google App Engine
 ](https://sites.google.com/site/io/building-scalable-web-applications-with-google-app-engine)
 
