@@ -2,9 +2,14 @@
 
 **面试高频指数：★★★☆☆**
 
-在 C 语言中，我们大多数是用 `(type_name) expression` 这种方式来做强制类型转换，但是在 C++ 中，更推荐使用四个转换操作符来实现显式类型转换。
+在 C 语言中，我们大多数是用 `(type_name) expression` 这种方式来做强制类型转换，但是在 C++ 中，更推荐使用四个转换操作符来实现显式类型转换：
 
-#### static_cast
+* static_cast
+* dynamic_cast
+* const_cast
+* reinterpret_cast
+
+## 一、static_cast
 
 用法: `static_cast <new_type> (expression)`
 
@@ -12,7 +17,7 @@
 
 主要用于以下场景:
 
-##### 基本类型之间的转换
+### 1.1 基本类型之间的转换
 
 将一个基本类型转换为另一个基本类型，例如将整数转换为浮点数或将字符转换为整数。
 
@@ -21,7 +26,7 @@ int a = 42;
 double b = static_cast<double>(a); // 将整数a转换为双精度浮点数b
 ```
 
-##### 指针类型之间的转换
+### 1.2 指针类型之间的转换
 
 将一个指针类型转换为另一个指针类型，尤其是在类层次结构中从基类指针转换为派生类指针。这种转换不执行运行时类型检查，可能不安全，要自己保证指针确实可以互相转换。
 
@@ -33,7 +38,7 @@ Base* base_ptr = new Derived();
 Derived* derived_ptr = static_cast<Derived*>(base_ptr); // 将基类指针base_ptr转换为派生类指针derived_ptr
 ```
 
-##### 引用类型之间的转换
+### 1.3 引用类型之间的转换
 
 类似于指针类型之间的转换，可以将一个引用类型转换为另一个引用类型。在这种情况下，也应注意安全性。
 
@@ -47,7 +52,7 @@ Derived& derived_ref = static_cast<Derived&>(base_ref); // 将基类引用base_r
 
 如果想要运行时类型检查，可以使用`dynamic_cast`进行安全的向下类型转换。
 
-#### dynamic_cast
+## 二、dynamic_cast
 
 用法: `dynamic_cast <new_type> (expression)`
 
@@ -57,7 +62,7 @@ Derived& derived_ref = static_cast<Derived&>(base_ref); // 将基类引用base_r
 
 `dynamic_cast`的主要应用场景：
 
-##### 向下类型转换
+### 2.1 向下类型转换
 
 当需要将基类指针或引用转换为派生类指针或引用时，`dynamic_cast`可以确保类型兼容性。
 
@@ -71,7 +76,7 @@ Base* base_ptr = new Derived();
 Derived* derived_ptr = dynamic_cast<Derived*>(base_ptr); // 将基类指针base_ptr转换为派生类指针derived_ptr，如果类型兼容，则成功
 ```
 
-##### 用于多态类型检查
+### 2.2 用于多态类型检查
 
 处理多态对象时，`dynamic_cast`可以用来确定对象的实际类型，例如：
 
@@ -99,7 +104,7 @@ if (cat_ptr) {
 
 因为，`dynamic_cast`只有在基类存在虚函数(虚函数表)的情况下才有可能将基类指针转化为子类。
 
-#### dynamic_cast 底层原理
+### 2.3 dynamic_cast 底层原理
 
 `dynamic_cast`的底层原理依赖于运行时类型信息（RTTI, Runtime Type Information）。
 
@@ -129,9 +134,13 @@ protected:
 };
 ```
 ![](https://cdn.how2cs.cn/csguide/155928.png)
+
 首先，每个多态对象都有一个指向其vtable的指针，称为vptr。
+
 RTTI（就是上面图中的 type_info 结构)通常与vtable关联。
+
 `dynamic_cast`就是利用RTTI来执行运行时类型检查和安全类型转换。
+
 以下是`dynamic_cast`的工作原理的简化描述：
 
 1. 首先，`dynamic_cast`通过查询对象的 vptr 来获取其RTTI（这也是为什么 dynamic_cast 要求对象有虚函数）
@@ -142,11 +151,11 @@ RTTI（就是上面图中的 type_info 结构)通常与vtable关联。
 
 因为`dynamic_cast`依赖于运行时类型信息，它的性能可能低于其他类型转换操作（如`static_cast`），static 是编译器静态转换，编译时期就完成了。
 
-#### const_cast
+## 三、const_cast
 用法: `const_cast <new_type> (expression)`
 new_type 必须是一个指针、引用或者指向对象类型成员的指针。
 
-##### 修改const对象
+### 3.1 修改const对象
 当需要修改const对象时，可以使用`const_cast`来删除const属性。
 
 ```cpp
@@ -155,7 +164,7 @@ int* mutable_ptr = const_cast<int*>(&a); // 删除const属性，使得可以修�
 *mutable_ptr = 43; // 修改a的值
 ```
 
-##### const对象调用非const成员函数
+### 3.2 const对象调用非const成员函数
 
 当需要使用const对象调用非const成员函数时，可以使用`const_cast`删除对象的const属性。
 
@@ -173,7 +182,7 @@ mutable_obj_ptr->non_const_function(); // 调用非const成员函数
 不过上述行为都不是很安全，可能导致未定义的行为，因此应谨慎使用。
 
 
-#### reinterpret_cast
+## 四、reinterpret_cast
 
 用法: `reinterpret_cast <new_type> (expression)`
 
@@ -189,7 +198,7 @@ cast 在这里可以翻译成“转型”（在侯捷大大翻译的《深度探
 
 `reinterpret_cast`的一些典型应用场景：
 
-##### 指针类型之间的转换
+### 4.1 指针类型之间的转换
 
 在某些情况下，需要在不同指针类型之间进行转换，如将一个`int`指针转换为`char`指针。
 
@@ -201,5 +210,7 @@ int* int_ptr = &a;
 char* char_ptr = reinterpret_cast<char*>(int_ptr); // 将int指针转换为char指针
 ```
 
-另外，这篇文章对于 reinterpret_cast 讲解得很不错，可以看一下：https://zhuanlan.zhihu.com/p/33040213
+另外，这篇文章对于 reinterpret_cast 讲解得很不错，可以看一下：
+
+https://zhuanlan.zhihu.com/p/33040213
 
