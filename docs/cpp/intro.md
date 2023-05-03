@@ -6,7 +6,7 @@
 
 - **C++ 基础篇** 👇
 ::: details 点击展开
-  - [sizeof 关键字](https://csguide.cn/cpp/basics/sizeof.html)
+  - [sizeof 关键字](/cpp/basics/sizeof.html)
   - [sizeof 和 strlen](/cpp/basics/sizeof_and_strlen.html)
   - [数组做参数退化为指针](/cpp/basics/array_and_pointer.html)
   - [const 关键字](/cpp/basics/const.html)
