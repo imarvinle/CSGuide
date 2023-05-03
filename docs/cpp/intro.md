@@ -2,6 +2,8 @@
 
 对于 C++ 语法重点内容进行讲解，包括内存、指针、智能指针、虚函数、C++11、面向对象等等，共计 10w+ 字。
 
+面试重点及复习指南看这里: [C/C++后台开发面试重点知识](https://csguide.cn/cpp/)
+
 - **C++ 基础篇** 👇
 ::: details 点击展开
   - [sizeof 关键字](https://csguide.cn/cpp/basics/sizeof.html)
