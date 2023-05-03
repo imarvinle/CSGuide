@@ -1,14 +1,13 @@
-# 常见的内存错误
+# 常见的 C/C++ 内存错误
 
 **面试高频指数：★★★★☆**
 
-大家好，我是小北。
 
 内存，一定是 C/C++ 面试中重点考察的部分，考察形式很多，有提问内存管理、指针的理解，也有给出一段代码，问你这段代码里有什么内存问题。
 
-而且日常工作中，往往也出现和内存有关的错误，包括各种 segmentfault、coredump等等，那么这篇文章中就帮大家汇总了 C/C++ 中常见的内存错误。
+而且日常工作中，往往也出现和内存有关的错误，包括各种 segmentfault、coredump等等，那么这篇文章中就帮大家汇总了 C/C++ 中常见的内存错误，主要来自 CSAPP 内存管理章节，可以在线阅读 CSAPP 中文电子版: https://hansimov.gitbook.io/csapp/ch01-a-tour-of-computer-systems
 
-#### 1. 间接引用坏指针
+## 1. 间接引用坏指针
 
 要知道进程的虚拟地址空间中有较大的空洞，没有映射到任何有意义的数据。
 
@@ -38,9 +37,82 @@ scanf("%d", val)
 在最好的情况下，程序立即以异常终止。在最糟糕的情况下，val 的内容对应于虚拟内存的某个合法的读/写区域，于是我们就覆盖了这块内存。
 
 
+## 2. 读未初始化的内存
 
-https://hansimov.gitbook.io/csapp/part2/ch09-virtual-memory/9.11-common-memoory-related-bugs-in-c-programs
+虽然 bss 内存位置（诸如未初始化的全局 C 变量）总是被加载器初始化为零，但是对于堆内存却并不是这样的。
 
+一个常见的错误就是假设堆内存被初始化为零：
 
-https://github.com/imarvinle/awesome-cs-books
+```c
+/* Return y = Ax */
+int *matvec(int **A, int *x, int n)
+{
+    int i, j;
+    
+    int *y = (int *)Malloc(n * sizeof(int));
+    
+    for (i = 0; i < n; i++)
+        for (j = 0; j < n; j++)
+            y[i] += A[i][j] * x[j];
+    return y;
+}
+```
+在这个示例中，程序员不正确地假设向量 y 被初始化为零。正确的实现方式是显式地将 y[i] 设置为零，或者使用 calloc。
+
+## 3. 栈缓冲区溢出
+
+如果一个程序不检查输入串的大小就写入栈中的目标缓冲区，那么这个程序就会有缓冲区溢出错误（buffer overflow bug）。
+
+例如，下面的函数就有缓冲区溢出错误，因为 gets 函数复制一个任意长度的串到缓冲区。
+
+为了纠正这个错误，必须使用 fgets 函数，这个函数限制了输入串的大小：
+
+```c
+void bufoverflow()
+{
+    char buf[64];
+    gets(buf); /* Here is the stack buffer overflow bug */
+    return;
+}
+```
+## 4. 误解指针运算
+
+另一种常见的错误是忘记了指针的算术操作是以它们指向的对象的大小为单位来进行的，而这种大小単位并不一定是字节。
+
+例如，下面函数的目的是扫描一个 int 的数组，并返回一个指针，指向 val 的首次出现：
+
+```c
+int *search(int *p, int val)
+{
+    while (*p && *p != val)
+        p += sizeof(int); /* Should be p++ */
+    return p;
+}
+```
+
+## 5. 引用不存在的变量
+
+没有太多经验的 C 程序员不理解栈的规则，有时会引用不再合法的本地变量，如下列所示：
+```c
+int *stackref ()
+{
+    int val;
+    
+    return &val;
+}
+```
+这个函数返回一个指针（比如说是 p），指向栈里的一个局部变量，然后弹出它的栈帧。
+尽管 p 仍然指向一个合法的内存地址，但是它已经不再指向一个合法的变量了。
+当以后在程序中调用其他函数时，内存将重用它们的栈帧。再后来，如果程序分配某个值给 *p，那么它可能实际上正在修改另一个函数的栈帧中的一个条目，从而潜在地带来灾难性的、令人困惑的后果。
+
+## 6. 引起内存泄漏
+内存泄漏是缓慢、隐性的杀手，当程序员不小心忘记释放已分配块，而在堆里创建了垃圾时，会发生这种问题。例如，下面的函数分配了一个堆块 x，然后不释放它就返回：
+```c
+void leak(int n)
+{
+    int *x = (int *)Malloc(n * sizeof(int));
+    return;  /* x is garbage at this point */
+}
+```
+
 

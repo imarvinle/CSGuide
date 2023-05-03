@@ -11,7 +11,7 @@
 
 在这篇文章中，我们将主要专注于**动态内存管理**这部分，从 malloc 和 free 的底层原理出发，一步步讲到 mmap和brk等知识。
 
-#### malloc 和 free
+## malloc 和 free
 
 `malloc` 和 `free` 是 C 语言中用于动态内存分配和释放内存的两个函数。
 
@@ -19,9 +19,10 @@
 
 那么 malloc 分配的内存究竟从何而来呢？
 
-> 这部分讲解参考原文: https://jacktang816.github.io/post/mallocandfree/
+> 这部分整理自文章: https://jacktang816.github.io/post/mallocandfree/ ，并重新排版，欢迎阅读原文
+> 作者：JackTang816
 
-#### 进程地址空间
+## 进程地址空间
 
 ![](https://cdn.how2cs.cn/csguide/054645.jpg)
 
@@ -41,9 +42,9 @@ bss段则存放未初始化或初始值为0的全局变量和局部静态变量�
 
 栈段则主要存储局部变量、函数参数、返回地址等。
 
-#### 内存映射
+## 内存映射 mmap 
 
-**内存映射段(mmap)**的作用是：内核将硬盘文件的内容直接映射到内存，任何应用程序都可通过 Linux 的 mmap() 系统调用请求这种映射。
+- **内存映射段(mmap)** 的作用是：内核将硬盘文件的内容直接映射到内存，任何应用程序都可通过 Linux 的 mmap() 系统调用请求这种映射。
 
 - 内存映射是一种方便高效的文件 I/O 方式， 因而被用于装载动态共享库。
 
@@ -95,11 +96,13 @@ start_stack是进程栈的起始地址，栈的大小是在编译时期确定的
 
 > malloc只知道start_brk 和brk之间连续可用的内存空间它可用任意分配，如果不够用了就向系统申请增大brk。后面一部分主要就malloc如何分配内存进行说明。
 
-#### 相关系统调用
+## 相关系统调用
 
- ##### brk()和sbrk()
+### brk()和sbrk()
 
-由之前的进程地址空间结构分析可以知道，要增加一个进程实际的可用堆大小，就需要将break指针向高地址移动。Linux通过**brk和sbrk系统调用**操作break指针。两个系统调用的原型如下：
+由之前的进程地址空间结构分析可以知道，要增加一个进程实际的可用堆大小，就需要将break指针向高地址移动。
+
+Linux通过**brk和sbrk系统调用**操作break指针。两个系统调用的原型如下：
 
 ```cpp
 #include <unistd.h>
@@ -107,9 +110,12 @@ int brk(void *addr);
 void *sbrk(intptr_t increment);
 ```
 
-brk函数将break指针直接设置为某个地址，而sbrk将break指针从当前位置移动increment所指定的增量。brk在执行成功时返回0，否则返回-1并设置errno为ENOMEM；sbrk成功时返回break指针移动之前所指向的地址，否则返回(void *)-1。
+brk函数将break指针直接设置为某个地址，而sbrk将break指针从当前位置移动increment所指定的增量。
+
+brk在执行成功时返回0，否则返回-1并设置errno为ENOMEM；sbrk成功时返回break指针移动之前所指向的地址，否则返回(void *)-1。
 
 > ps: 如果将increment设置为0，则可以获得当前break的地址。
+>
 > 另外需要注意的是，由于Linux是按页进行内存映射的，所以如果break被设置为没有按页大小对齐，则系统实际上会在最后映射一个完整的页，从而实际已映射的内存空间比break指向的地方要大一些。但是使用break之后的地址是很危险的（尽管也许break之后确实有一小块可用内存地址）。
 
 进程所面对的虚拟内存地址空间，只有按页映射到物理内存地址，才能真正使用。
@@ -133,7 +139,7 @@ struct rlimit {
 
 其中硬限制作为软限制的上限，非特权进程只能设置软限制，且不能超过硬限制。
 
-##### mmap函数
+### mmap函数
 ```cpp
 #include <sys/mman.h>
 void *mmap(void *addr, size\_t length, int prot, int flags, int fd, off\_t offset);
@@ -141,9 +147,12 @@ int munmap(void *addr, size_t length);
 ```
 
 mmap函数第一种用法是映射磁盘文件到内存中；而malloc使用的mmap函数的第二种用法，即匿名映射，匿名映射不映射磁盘文件，而是向映射区申请一块内存。
+
 munmap函数是用于释放内存，第一个参数为内存首地址，第二个参数为内存的长度。接下来看下mmap函数的参数。
 
-当申请小内存的时，malloc使用sbrk分配内存；当申请大内存时，使用mmap函数申请内存；但是这只是分配了虚拟内存，还没有映射到物理内存，当访问申请的内存时，才会因为缺页异常，内核分配物理内存。
+当申请小内存的时，malloc使用sbrk分配内存；当申请大内存时，使用mmap函数申请内存；
+
+但是这只是分配了虚拟内存，还没有映射到物理内存，当访问申请的内存时，才会因为缺页异常，内核分配物理内存。
 
 ![](https://cdn.how2cs.cn/csguide/055900.jpg)
 
@@ -152,7 +161,7 @@ munmap函数是用于释放内存，第一个参数为内存首地址，第二�
 
 >  其中，DEFAULT_MMAP_THRESHOLD默认为128k，可通过mallopt进行设置。 重点看下小块内存(size > DEFAULT_MMAP_THRESHOLD)的分配，glibc使用的内存池如下图示：
 
-#### malloc实现方案
+## malloc实现方案
 
 由于brk/sbrk/mmap属于系统调用，如果每次申请内存，都调用这三个函数中的一个，那么每次都要产生系统调用开销（即cpu从用户态切换到内核态的上下文切换，这里要保存用户态数据，等会还要切换回用户态），这是非常影响性能的；
 
@@ -167,11 +176,23 @@ munmap函数是用于释放内存，第一个参数为内存首地址，第二�
 - bins[0]目前没有使用
 - bins[1]的链表称为unsorted_list，用于维护free释放的chunk。
 - bins[2,63)的区间称为small_bins，用于维护＜512字节的内存块，其中每个元素对应的链表中的chunk大小相同，均为index*8。
-- bins[64,127)称为large_bins，用于维护>512字节的内存块，每个元素对应的链表中的chunk大小不同，index越大，链表中chunk的内存大小相差越大，例如: 下标为64的chunk大小介于[512, 512+64)，下标为95的chunk大小介于[2k+1,2k+512)。同一条链表上的chunk，按照从小到大的顺序排列。
+- bins[64,127)称为large_bins，用于维护>512字节的内存块，每个元素对应的链表中的chunk大小不同，index越大，链表中chunk的内存大小相差越大。
 
-malloc将内存分成了大小不同的chunk，然后通过bins来组织起来。malloc将相似大小的chunk（图中可以看出同一链表上的chunk大小差不多）用双向链表链接起来，这样一个链表被称为一个bin。malloc一共维护了128个bin，并使用一个数组来存储这些bin。数组中第一个为**unsorted bin**，数组编号前2到前64的bin为**small bins**，同一个small bin中的chunk具有相同的大小，两个相邻的small bin中的chunk大小相差8bytes。small bins后面的bin被称作**large bins**。large bins中的每一个bin分别包含了一个给定范围内的chunk，其中的chunk按大小序排列。large bin的每个bin相差64字节。
+例如: 下标为64的chunk大小介于[512, 512+64)，下标为95的chunk大小介于[2k+1,2k+512)。同一条链表上的chunk，按照从小到大的顺序排列。
 
-malloc除了有unsorted bin，small bin，large bin三个bin之外，还有一个**fast bin**。一般的情况是，程序在运行时会经常需要申请和释放一些较小的内存空间。当分配器合并了相邻的几个小的 chunk 之后，也许马上就会有另一个小块内存的请求，这样分配器又需要从大的空闲内存中切分出一块，这样无疑是比较低效的，故而，malloc 中在分配过程中引入了 fast bins，不大于 max_fast(默认值为 64B)的 chunk 被释放后，首先会被放到 fast bins中，fast bins 中的 chunk 并不改变它的使用标志 P。
+malloc将内存分成了大小不同的chunk，然后通过bins来组织起来。
+
+malloc将相似大小的chunk（图中可以看出同一链表上的chunk大小差不多）用双向链表链接起来，这样一个链表被称为一个bin。malloc一共维护了128个bin，并使用一个数组来存储这些bin。
+
+数组中第一个为**unsorted bin**，数组编号前2到前64的bin为**small bins**，同一个small bin中的chunk具有相同的大小，两个相邻的small bin中的chunk大小相差8bytes。
+
+small bins后面的bin被称作**large bins**。large bins中的每一个bin分别包含了一个给定范围内的chunk，其中的chunk按大小序排列。
+
+large bin的每个bin相差64字节。
+
+malloc除了有unsorted bin，small bin，large bin三个bin之外，还有一个**fast bin**。
+
+一般的情况是，程序在运行时会经常需要申请和释放一些较小的内存空间。当分配器合并了相邻的几个小的 chunk 之后，也许马上就会有另一个小块内存的请求，这样分配器又需要从大的空闲内存中切分出一块，这样无疑是比较低效的，故而，malloc 中在分配过程中引入了 fast bins，不大于 max_fast(默认值为 64B)的 chunk 被释放后，首先会被放到 fast bins中，fast bins 中的 chunk 并不改变它的使用标志 P。
 
 这样也就无法将它们合并，当需要给用户分配的 chunk 小于或等于 max_fast 时，malloc 首先会在 fast bins 中查找相应的空闲块，然后才会去查找 bins 中的空闲 chunk。在某个特定的时候，malloc 会遍历 fast bins 中的 chunk，将相邻的空闲 chunk 进行合并，并将合并后的 chunk 加入 unsorted bin 中，然后再将 unsorted bin 里的 chunk 加入 bins 中。
 
@@ -197,9 +218,11 @@ unsorted bin 的队列使用 bins 数组的第一个，如果被用户释放的 
 
 - Chunk 的第二个域倒数第三个位为 **A**，表示该 chunk **属于主分配区或者非主分配区**，如果属于非主分配区，将该位置为 1，否则置为 0。
 
-当chunk空闲时，其M状态是不存在的，只有AP状态，原本是用户数据区的地方存储了四个指针，指针fd指向后一个空闲的chunk,而bk指向前一个空闲的chunk，malloc通过这两个指针将大小相近的chunk连成一个双向链表。在large bin中的空闲chunk，还有两个指针，fd_nextsize和bk_nextsize，用于加快在large bin中查找最近匹配的空闲chunk。不同的chunk链表又是通过bins或者fastbins来组织的。（这里就很符合网上大多数人说的链表理论了）
+当chunk空闲时，其M状态是不存在的，只有AP状态，原本是用户数据区的地方存储了四个指针，指针fd指向后一个空闲的chunk,而bk指向前一个空闲的chunk，malloc通过这两个指针将大小相近的chunk连成一个双向链表。
 
-#### malloc 内存分配流程
+在large bin中的空闲chunk，还有两个指针，fd_nextsize和bk_nextsize，用于加快在large bin中查找最近匹配的空闲chunk。不同的chunk链表又是通过bins或者fastbins来组织的。（这里就很符合网上大多数人说的链表理论了）
+
+## malloc 内存分配流程
 
 如果分配内存<512字节，则通过内存大小定位到smallbins对应的index上(floor(size/8))
 
@@ -217,14 +240,21 @@ index++从更大的链表中查找，直到找到合适大小的chunk为止，�
 
 或者，内存<128k，使用brk；内存>128k，使用mmap获取新内存
 
-此外，调用free函数时，它将用户释放的内存块连接到空闲链上。到最后，空闲链会被切成很多的小内存片段，如果这时用户申请一个大的内存片段，那么空闲链上可能没有可以满足用户要求的片段了。于是，malloc函数请求延时，并开始在空闲链上翻箱倒柜地检查各内存片段，对它们进行整理，将相邻的小空闲块合并成较大的内存块。
+此外，调用free函数时，它将用户释放的内存块连接到空闲链上。到最后，空闲链会被切成很多的小内存片段，如果这时用户申请一个大的内存片段，那么空闲链上可能没有可以满足用户要求的片段了。
+
+于是，malloc函数请求延时，并开始在空闲链上翻箱倒柜地检查各内存片段，对它们进行整理，将相邻的小空闲块合并成较大的内存块。
+
 > 虚拟内存并不是每次malloc后都增长，是与上一节说的堆顶没发生变化有关，因为可重用堆顶内剩余的空间，这样的malloc是很轻量快速的。
+
 如果虚拟内存发生变化，基本与分配内存量相当，因为虚拟内存是计算虚拟地址空间总大小。
+
 物理内存的增量很少，是因为malloc分配的内存并不就马上分配实际存储空间，只有第一次使用，如第一次memset后才会分配。
+
 由于每个物理内存页面大小是4k，不管memset其中的1k还是5k、7k，实际占用物理内存总是4k的倍数。所以物理内存的增量总是4k的倍数。
+
 因此，不是malloc后就马上占用实际内存，而是第一次使用时发现虚存对应的物理页面未分配，产生缺页中断，才真正分配物理页面，同时更新进程页面的映射关系。这也是Linux虚拟内存管理的核心概念之一。
 
-#### 内存碎片
+## 内存碎片
 
 free释放内存时，有两种情况：
 
@@ -241,24 +271,23 @@ malloc 40k内存，即chunkA，brk = 512k + 40k = 552k malloc 50k内存，即chu
 此时，由于brk = 662k，而释放的内存是位于[512k, 552k]之间，无法通过移动brk指针，将区域内内存交还操作系统，因此，在[512k, 552k]的区域内便形成了一个内存空洞即**内存碎片**。 按照glibc的策略，free后的chunkA区域由于不和top chunk相邻，因此，无法和top chunk 合并，应该挂在unsorted_list链表上。
 
 
-
-
-
-#### 总结
+## 总结
 
 关于动态内存管理上面讲的比较细节，但是还有很多内容没有包含，包括
 
 空闲链表组织方式、伙伴系统等等:
 
-![image-20230331140621275](https://cdn.how2cs.cn/csguide/060622.png)
+![空闲链表组织方式](https://cdn.how2cs.cn/csguide/060622.png)
 
-![image-20230331140633821](https://cdn.how2cs.cn/csguide/060635.png)
+![伙伴系统](https://cdn.how2cs.cn/csguide/060635.png)
 
 大家如果想更进一步学习，建议看书：
 
-* 《深入理解计算机系统》 第九章 虚拟内存部分的动态内存管理章节
-* 《Linux内核设计与实现》第12章内存管理、第15章 进程地址空间
+* **《深入理解计算机系统》 第九章 虚拟内存部分的动态内存管理章节**
+* **《Linux内核设计与实现》第12章内存管理、第15章 进程地址空间**
 
-关于书籍的 PDF 可以在这个github仓库获取: https://github.com/imarvinle/awesome-cs-books
+## 系统编程书籍下载
+
+关于这些系统编程书籍的 PDF 可以在这里下载：[深入理解计算机系统进阶之路书单(含下载方式)](https://csguide.cn/resource/system_books.html)
 
 

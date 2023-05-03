@@ -1,14 +1,14 @@
-# 深入理解shared_ptr 之手写
+# 深入理解shared_ptr之手写
 
 **面试高频指数：★★★★☆**
 
-正如这篇文章 [智能指针](https://www.yuque.com/csguide/cf15wf/qpcemwfid8l5xoda) 所说，智能指针是一种可以自动管理内存的指针，它可以在不需要手动释放内存的情况下，确保对象被正确地销毁。
+正如这篇文章 [智能指针](https://csguide.cn/cpp/memory/smart_pointers.html) 所说，智能指针是一种可以自动管理内存的指针，它可以在不需要手动释放内存的情况下，确保对象被正确地销毁。
 
 可以显著降低程序中的内存泄漏和悬空指针的风险。
 
 而用得比较多的一种智能指针就是 shared_ptr ，从名字也可以看出来，shared 强调分享，也就是指针的所有权不是独占。
 
-#### shared_ptr 的使用
+## shared_ptr 的使用
 
 `shared_ptr` 的一个关键特性是可以共享所有权，即多个 `shared_ptr` 可以同时指向并拥有同一个对象。
 
@@ -56,17 +56,31 @@ ptr1 作用域结束前的引用计数: 1
 MyClass 析构函数
 ```
 
+## 引用计数如何实现的
 
-####  shared_ptr 的 double free 问题
+说起 shared_ptr 大家都知道引用计数，但是问引用计数实现的细节，不少同学就回答不上来了，其实引用计数本身是使用指针实现的，也就是将计数变量存储在堆上，所以共享指针的shared_ptr 就存储一个指向堆内存的指针，文章后面会手动实现一个 shared_ptr。
+
+
+##  shared_ptr 的 double free 问题
 
 double free 问题就是一块内存空间或者资源被释放两次。
-那么为什么会释放两次呢？double free 可能是下面这些原因造成的：
+
+那么为什么会释放两次呢？
+
+double free 可能是下面这些原因造成的：
+
 * 直接使用原始指针创建多个 shared_ptr，而没有使用 shared_ptr 的 make_shared 工厂函数，从而导致多个独立的引用计数。
+
 * 循环引用，即两个或多个 shared_ptr 互相引用，导致引用计数永远无法降为零，从而无法释放内存。
 
+### 如何解决 double free
+
 解决 shared_ptr double free 问题的方法：
+
 * 使用 make_shared 函数创建 shared_ptr 实例，而不是直接使用原始指针。这样可以确保所有 shared_ptr 实例共享相同的引用计数。
-* 对于可能产生循环引用的情况，使用 weak_ptr。weak_ptr 是一种不控制对象生命周期的智能指针，它只观察对象，而不增加引用计数。这可以避免循环引用导致的内存泄漏问题。关于 weak_ptr 的更多知识可以看这篇: [深入理解weak_ptr](https://www.yuque.com/csguide/cf15wf/vl2ldvm7ksbm86s8)
+
+* 对于可能产生循环引用的情况，使用 weak_ptr。weak_ptr 是一种不控制对象生命周期的智能指针，它只观察对象，而不增加引用计数。这可以避免循环引用导致的内存泄漏问题。关于 weak_ptr 的更多知识可以看这篇: [深入理解weak_ptr](https://csguide.cn/cpp/memory/how_to_understand_weak_ptr.html)
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -99,8 +113,11 @@ int main() {
     return 0;
 }
 ```
+
 上面这种循环引用问题可以使用std::weak_ptr来避免循环引用。
+
 std::weak_ptr不会增加所指向对象的引用计数，因此不会导致循环引用。
+
 下面👇这个代码就解决了循环引用问题：
 ```cpp
 #include <iostream>
@@ -136,14 +153,18 @@ int main() {
     return 0;
 }
 ```
+
 但是使用 weak_ptr 也有几点注意事项:
+
 * 如果需要访问 weak_ptr 所指向的对象，需要将std::weak_ptr 通过 weak_ptr::lock() 临时转换为std::shared_ptr.
+
 * 在使用lock()方法之前，应当检查使用 std::weak_ptr::expired() 检查 std::weak_ptr是否有效，即它所指向的对象是否仍然存在。
 
-#### enable_shared_from_this 
+## enable_shared_from_this 
 从名字可以看出几个关键词：enable: 允许  shared 指 shared_ptr, from_this 则是指从类自身this 构造 shared_ptr。
 
 想象这样一个场景:
+
 ```cpp
 struct SomeData;
 void SomeAPI(const std::shared_ptr<SomeData>& d) {}
@@ -165,6 +186,7 @@ struct SomeData {
 上面的做法是错误的，因为SomeAPI调用结束后std::shared_ptr<SomeData>对象的引用计数会降为0，导致 this 被意外释放。
 
 这种情况下，我们需要使用std::enable_shared_from_this ，使用方法很简单，只需要让SomeData继承std::enable_shared_from_this<SomeData>，然后调用shared_from_this，例如：
+
 ```cpp
 #include <memory>
 
@@ -193,18 +215,21 @@ int main()
 总结一下，当下面👇这些场景用到 shared_ptr 时，需要搭配上 enable_shared_from_this:
 
 1. 当你需要将`this`指针传递给其他函数或方法，而这些函数或方法需要一个`std::shared_ptr`，而不是裸指针。
+
 2. 当你需要在类的成员函数内部创建指向当前对象的`std::shared_ptr`，例如在回调函数或事件处理中。
 
 > 关于 enable_shared_from_this 的更多原理可以看一下这篇博客: https://0cch.com/2020/08/05/something-about-enable_shared_from_this/
 
 
-#### 线程安全性
+## 线程安全性
 
-另外，注意智能指针都不是线程安全的，在多线程环境中使用智能指针时，需要采取额外的措施来确保线程安全。
+其实 shared_ptr 线程不安全主要来自于引用计数有并发更新的风险，当然引用计数本身也可以使用原子atomic。
 
-如互斥锁（`std::mutex`）或原子操作（`std::atomic`），来确保线程安全。
+所以在多线程环境中使用智能指针时，需要采取额外的措施来确保线程安全，
 
-#### 手写 shared_ptr
+如互斥锁（`std::mutex`）或原子操作（`std::atomic`）来确保线程安全。
+
+## 手写 shared_ptr
 
 这是 C++ 面试常考的一个环节，有的会让你说实现思路，有的则直接需要手写一个。
 
@@ -301,7 +326,7 @@ int main() {
 
 **建议大家学习掌握 shared_ptr 思想之后，自己也手动写一遍，这样印象才深刻~**
 
-#### shared_ptr 常用 API
+## shared_ptr 常用 API
 
 `std::shared_ptr` 提供了许多有用的 API，以下是一些常用的 API：
 

@@ -16,7 +16,7 @@
 
 以下是 `nullptr` 和 `NULL` 之间区别的一些例子：
 
-#### 函数重载
+## 函数重载
 
 ```cpp
 #include <iostream>
@@ -36,7 +36,7 @@ int main() {
 
 ```
 
-#### 函数模板
+## 函数模板
 
 ```cpp
 #include <iostream>

@@ -1,6 +1,8 @@
-# 类型萃取
+# C++ 类型萃取
 
 **面试高频指数：★★☆☆☆**
+
+## 什么是 type_traits
 
 在C++中，类型萃取（type_traits）是一种编译时技术，用于在编译期间获取和操作类型的信息。
 
@@ -61,7 +63,7 @@ struct is_integral : is_integral_helper<typename std::remove_cv<T>::type> {};
 
 实际的实现可能更复杂，以适应各种编译器和平台的特性。
 
-#### 萃取如何用
+## 萃取如何用
 
 举一个例子，如何使用类型萃取来选择不同的函数实现：
 
@@ -146,4 +148,6 @@ int main() {
 
 ```
 
-在这个例子中，我们使用类型萃取 `has_const_iterator` 来检查容器是否具有 `const_iterator` 类型。然后，我们使用 `std::enable_if` 选择合适的 `print()` 函数实现。这样，对于有 `const_iterator` 的容器，我们可以优先使用 `const_iterator` 进行遍历。
+上面代码使用类型萃取 `has_const_iterator` 来检查容器是否具有 `const_iterator` 类型。
+
+然后，使用 `std::enable_if` 选择合适的 `print()` 函数实现。这样对于有 `const_iterator` 的容器，可以优先使用 `const_iterator` 进行遍历。
