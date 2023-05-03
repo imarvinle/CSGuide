@@ -5,11 +5,11 @@
 
 ![](https://cdn.how2cs.cn/csguide/041351.png)
 
-[点击查看目录](https://csguide.cn/cpp/intro.html)
+[点击查看目录](/cpp/intro.html)
 
 ## 一、C++ 面试重点
 
-本篇主要是关于 C++ 语言本身，如果是整个后台技术栈的学习路线，可以看这篇文章: [Linux C++ 后台开发学习路线](https://csguide.cn/roadmap/cpp/linux_cpp.html)
+本篇主要是关于 C++ 语言本身，如果是整个后台技术栈的学习路线，可以看这篇文章: [Linux C++ 后台开发学习路线](/roadmap/cpp/linux_cpp.html)
 
 对于 C++ 后台开发面试来说，基本上语言层面考察候选人以下几个方面(其它算法、计算机基础暂时不在这里列出来)：
 
@@ -91,7 +91,7 @@
 
 我基本都看了，收获挺大的，建议看下，可以开倍速。
 
-侯捷老师的视频课程可以在这获取学习: [侯捷C++视频全系列，包括C++面向对象开发、STL标准库与泛型编程、C++11、C++14、内存管理、C++程序生前死后](https://csguide.cn/resource/houjie.html)
+侯捷老师的视频课程可以在这获取学习: [侯捷C++视频全系列，包括C++面向对象开发、STL标准库与泛型编程、C++11、C++14、内存管理、C++程序生前死后](/resource/houjie.html)
 
 ## 六、快速突击版
 
