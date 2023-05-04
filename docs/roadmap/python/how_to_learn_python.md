@@ -1,4 +1,13 @@
-# Python 学习路线
+---
+title: Python超详细一条龙版学习路线（2023）
+meta:
+  - name: description
+    content: Python语言学习，Python应用场景，Python简介，Python特点
+  - name: keywords
+    content: Python、爬虫、Python后台、python自动化运维、Python就业
+---
+
+#  Python超详细一条龙版学习路线（2023）
 
 ## 一、前言
 

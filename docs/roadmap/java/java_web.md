@@ -1,6 +1,15 @@
-# Java 后台开发学习路线
+---
+title: Java 后台超详细系统学习路线（2023）
+meta:
+  - name: description
+    content: Java 后台服务器开发学习之路该怎么去学习，冲击大厂，Java 应用场景，Java基础怎么学
+  - name: keywords
+    content: Java、JavaSe、JDK、面向对象、后台开发、后端开发、服务端开发、学习路线
+---
+
+# Java 后台超详细系统学习路线（2023）
 大家好，我是小北。
-之前写过一版 [Linux C++ 后台开发学习路线](https://www.yuque.com/csguide/index/ww5hrhyt3256s4ez)，这个路线图在全网已经有 10 w+ 读者看过了，很多读者看过这个路线找到了学习方向。
+之前写过一版 [Linux C++ 后台开发学习路线](/roadmap/cpp/linux_cpp.html)，这个路线图在全网已经有 10 w+ 读者看过了，很多读者看过这个路线找到了学习方向。
 但是现在学 C++ 的相对 Java 来说少很多，很多学 Java 的读者也一直在催我出 Java 版。
 更是在知乎立下了 flag：
 ![](https://cdn.how2cs.cn/gzh/008i3skNgy1gpuzwekf2fj30wi0jqtab.jpg)

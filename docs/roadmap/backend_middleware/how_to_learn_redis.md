@@ -1,4 +1,13 @@
-# Redis 学习路线（系统学习Redis）
+---
+title: Redis 超详细系统学习路线（2023）
+meta:
+  - name: description
+    content:  如何系统学习Redis，Redis 有哪些应用，后端开发冲击大厂，KV存储
+  - name: keywords
+    content: Redis、高性能、AOF、RDB、Redis应用、键值数据库
+---
+
+# Redis 超详细系统学习路线（2023）
 
 # 一、应用
 这篇文章聊下关于 Redis 的学习，作为目前非常热门的键值数据库，Redis 的应用非常广泛，常见的用来做缓存、分布式锁，还有做数据库持久化数据的。
