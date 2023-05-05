@@ -1,3 +1,7 @@
+---
+layout: NoYinliu
+---
+
 # 编程指北
 
 <center><strong>编程指北</strong></center>
