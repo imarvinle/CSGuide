@@ -1,4 +1,13 @@
-# 深入理解计算机系统（原书第三版）PDF 高清中文版
+---
+title: 深入理解计算机系统（原书第三版）PDF高清中文版
+meta:
+  - name: description
+    content:  深入理解计算机系统（原书第三版）PDF高清中文版，CSAPP PDF，深入理解计算机系统PDF下载
+  - name: keywords
+    content: 深入理解计算机系统PDF、高清、影印版、CSAPP PDF、深入理解计算机系统第三版
+---
+
+# 深入理解计算机系统（原书第三版）PDF高清中文版
 
 **深入理解计算机系统 PDF 深入理解计算机系统 pdf， 这本书的全名是：Computer Systems：A Programmer’s Perspective（所以它又被称为 CSAPP），个人习惯把它翻译为程序员所需了解的计算机系统知识，尽管土了些，但更名副其实。**
 
@@ -11,14 +20,14 @@
 ![深入理解计算机系统](https://cdn.how2cs.cn/gzh/008i3skNgy1gwjoj9uq7zj30z30u0n2a.jpg)
 
 
-**我把找到的高清电子书放这，有需自取~**
+**我电子版本（非高清版）放这，有需自取~**
 
 链接： [https://pan.baidu.com/s/1H9sqUOwjEafhs0B2Bhx2gw](https://pan.baidu.com/s/1H9sqUOwjEafhs0B2Bhx2gw)
 提取码：**fvdw**
 
 
 ::: tip
-（这本不是高清最新版，但是比较小，下载快速
+（上面这本不是高清最新版，但是比较小，方便下载快速
 高清版本整个有 500MB，有点太大了，需要的话可以去公众号「**编程指北**」回复「**csapp**」
 :::
 
@@ -26,7 +35,7 @@
 
 ![](https://cdn.how2cs.cn/csguide/095140.jpg)
 
-<center>👆也可以扫描上方二维码， 回复「<font face="黑体" size=4 color="red">csapp</font>
+<center>👆也可以截图微信扫描上方二维码， 回复「<font face="黑体" size=4 color="red">csapp</font>
 」即可获取</center>
 
 ## 阅读建议

@@ -1,3 +1,12 @@
+---
+title: 深入理解计算机系统进阶之路书单(含下载方式)
+meta:
+  - name: description
+    content:  深入理解计算机系统进阶之路书单(含下载方式)，系统学习计算机的书籍推荐，可下载
+  - name: keywords
+    content: 深入理解计算机系统、系统编程、编码、程序员自我修养、设计数据密集型应用、链接器和加载器、代码优化
+---
+
 # 深入理解计算机系统进阶之路书单(含下载方式)
 
 **最近给小伙伴们整理了一份 「深入理解计算机系统进阶」之路的书单，基本覆盖了从汇编、C语言、CSAPP、南大计算机基础课等。**
@@ -13,7 +22,7 @@
 
 ![](https://cdn.how2cs.cn/csguide/095140.jpg)
 
-<center>👆也可以扫描上方二维码， 回复「<font face="黑体" size=4 color="red">csapp</font>
+<center>👆也可以截图微信扫描上方二维码， 回复「<font face="黑体" size=4 color="red">csapp</font>
 」即可获取</center>
 
 
