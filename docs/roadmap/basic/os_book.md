@@ -9,20 +9,33 @@ meta:
 
 # 操作系统系统书籍分类推荐
 
-**操作系统是一门实践性很强的，光看书不动手很容易出现背书的情况，墙裂**推荐理论加实践，比如mit 6.828， 讲完系统调用，你就可以试着给xv6加个timer调用；讲完threads，你就可以试着给xv6加个系统调用，然后让这个系统支持线程...
+**操作系统是一门实践性很强的，光看书不动手很容易出现背书的情况**。
 
-**当然了，题主让推荐书，我这里提供从理论倒实践、源码分析一套：**
+墙裂推荐理论加实践，比如mit 6.828， 讲完系统调用，你就可以试着给xv6加个timer调用；讲完threads，你就可以试着给xv6加个系统调用，然后让这个系统支持线程...
 
-概念和理论：《现代操作系统》、《操作系统概念》
+我这里提供从理论倒实践、源码分析一套书籍，供参考：
 
-基于Unix：《Unix操作系统设计》
+## 概念和理论
 
-基于Linux：《[深入理解Linux内核](https://www.zhihu.com/search?q=深入理解Linux内核&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A1821996217})》
+《现代操作系统》、《操作系统概念》
 
-基于Windows：《[深入解析Windows操作系统](https://www.zhihu.com/search?q=深入解析Windows操作系统&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A1821996217})》
+## 基于Unix
 
-操作系统设计：《操作系统设计与实现》
+《Unix操作系统设计》
 
-源代码分析：《[Linux内核源代码情景分析](https://www.zhihu.com/search?q=Linux内核源代码情景分析&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A1821996217})》
+## Linux内核和源码
 
-操作系统实现：《[30天自制操作系统](https://www.zhihu.com/search?q=30天自制操作系统&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A1821996217})》、《操作系统真象还原》
+《深入理解Linux内核》
+
+《Linux内核源代码情景分析》
+
+## 基于Windows
+
+《深入解析Windows操作系统》
+
+## 操作系统设计
+
+《操作系统设计与实现》
+
+## 操作系统实现
+《30天自制操作系统》、《操作系统真象还原》

@@ -230,7 +230,9 @@ B 站也有对应的视频，B站弹幕会丰富一些，学起来也更有意�
 
 ### 8.3 CS 144--实现TCP 协议栈
 
-国外经典课程：斯坦佛 CS144，在这门课的 Project 中，你将用 C++ 循序渐进地搭建出整个 TCP/IP 协议栈，实现 IP 路由以及 ARP 协议，最后利用你自己的协议栈代替 Linux Kernel 的网络协议栈和其他学生的计算机进行通信，非常 amazing！
+国外经典课程：
+
+斯坦佛 CS144，在这门课的 Project 中，你将用 C++ 循序渐进地搭建出整个 TCP/IP 协议栈，实现 IP 路由以及 ARP 协议，最后利用你自己的协议栈代替 Linux Kernel 的网络协议栈和其他学生的计算机进行通信，非常 amazing！
 
 课程网站：[https://cs144.github.io/](https://cs144.github.io)
 
