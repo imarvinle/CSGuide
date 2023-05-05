@@ -29,7 +29,9 @@ meta:
 在这里分享给大家，为了避免链接过期，我放在公众号后台了，这样方便我更新，大家可以去扫码关注「**编程指北**」公众号，后台回复「**侯捷**」，即可获取。
 :::
 
-![](https://cdn.how2cs.cn/csguide/095140.jpg)
+<p align="center">
+  <img src="https://cdn.how2cs.cn/csguide/095140.jpg" alt="计算机书单" width="auto" height="auto">
+</p>
 
 <center>👆也可以截图微信扫描上方二维码， 回复「<font face="黑体" size=4 color="red">侯捷</font>
 」即可获取</center>
