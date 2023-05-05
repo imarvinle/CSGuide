@@ -8,7 +8,7 @@
 <p align="center" style="margin: 0; padding: 0">
   <img src="https://cdn.how2cs.cn/csguide/095140.jpg" alt="计算机书单" width="100%" style="max-width: 300px; max-height: 300px;">
 </p>
-<center style="margin-top: 0; font-size: 13px;">(截图微信扫一扫关注公众号)</center>
+<center style="margin-top: 0; font-size: 15px;">(截图微信扫一扫关注公众号)</center>
 
 <p style="font-size: 15px;">关注后，回复以下口令：</p>
 
