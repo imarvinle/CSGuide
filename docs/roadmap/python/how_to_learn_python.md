@@ -106,9 +106,8 @@ Python 这种解释型语言，对外发布的就是源码，没法对代码做�
 #### 装饰器
 - 函数装饰器、类装饰器
 
-### 3.2 入门学习材料
 
-#### 开发环境
+### 3.2 开发环境
 * 安装Python: 
 建议直接安装 Python3，参考：runoob.com/python3/python3-install.html
 
@@ -118,29 +117,38 @@ Python 这种解释型语言，对外发布的就是源码，没法对代码做�
 * IPython：
 功能丰富的工具，非常有效的使用交互式 Python。
 
-#### Python教程
+### 3.3 Python教程
 * 廖雪峰 Python 教程
 
-推荐廖雪峰 Python 教程：[https://www.liaoxuefeng.com/wiki/1016959663602400](https://www.liaoxuefeng.com/wiki/1016959663602400)， 可能是中文写得最好的 Python 入门教程了，有编程基础的，大概 一周可以把这个文档刷一遍，就可以愉快的写各种 Web、爬虫了。
+推荐廖雪峰 Python 教程：[https://www.liaoxuefeng.com/wiki/1016959663602400](https://www.liaoxuefeng.com/wiki/1016959663602400)
+
+可能是中文写得最好的 Python 入门教程了，有编程基础的，大概 一周可以把这个文档刷一遍，就可以愉快的写各种 Web、爬虫了。
+
 *  Python谷歌编码风格中译版: 
  [https://www.elias.cn/Python/PythonStyleGuide#Global_variables](https://www.elias.cn/Python/PythonStyleGuide#Global_variables)
 
-#### 视频教程：
+### 3.4 视频教程：
+
 * 北理工 Python语言程序设计
+
 可以看北京理工大学 嵩天 老师的 Python 程序设计语言课：[Python语言程序设计](https://www.bilibili.com/video/BV1Z64y1h7Rk?p=8&vd_source=dbac6fa7bb0e0e4d77d2421a5d3792cd)
+
 * 黑马Python
 如果不喜欢 MOOC 这种风格的课程，可以考虑看看黑马的：[黑马Python课程](https://www.bilibili.com/video/BV1qW4y1a7fU/?spm_id_from=333.337.search-card.all.click)
+
 * MIT 计算机科学导论与Python编程
+
 喜欢看国外公开课的话，可以看下MIT的  ：[计算机科学导论及Python编程](https://www.bilibili.com/video/BV1aJ411F7zE/?spm_id_from=333.788.recommend_more_video.4&vd_source=dbac6fa7bb0e0e4d77d2421a5d3792cd)
 
-#### 学习书籍
+### 3.5 学习书籍
 
-* 《Python编程：从入门到实践》 
+* **《Python编程：从入门到实践》** 
 
-这本书是《Python Crash Course》的中文版，适合 Python 初学者掌握 Python 的基础知识。书中还包括实践项目，如游戏开发、数据可视化和 Web 应用开发等，
+这本书是《Python Crash Course》的中文版，适合 Python 初学者掌握 Python 的基础知识。书中还包括实践项目，如游戏开发、数据可视化和 Web 应用开发等。
 
-* 《Python核心编程（第3版）》
+* **《Python核心编程（第3版）》**
 本书深入浅出地介绍了 Python 的核心概念和技巧。
+
 适合具备一定编程基础的读者，可以学到 Python 语言的核心知识、标准库、高级特性以及最佳实践。
 
 **学完基本的 Python 语法特性后，就可以根据自己的实际需求，学习特定方向的技术栈了。**
