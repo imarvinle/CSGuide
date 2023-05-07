@@ -30,7 +30,7 @@ meta:
 
 ![计算机书籍PDF](https://cdn.how2cs.cn/csguide/103902-1.png)
 
-下载链接: [计算机必看经典书单(含下载方式)](/resource/pdf.html)
+有需自取: [计算机必看经典书单(含下载方式)](/resource/pdf.html)
 
 ## Linux C++ 服务器端怎么学？
 

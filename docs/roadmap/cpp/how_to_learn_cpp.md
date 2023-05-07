@@ -31,7 +31,11 @@ C++ 最大的缺点就是语法复杂，而且难学难精。
 
 但是很遗憾，别说 21 天，就是一两年也很难学通 C++ 。
 
-学好过程，一定离不开读大量的书籍甚至标准库文档，
+学好过程，一定离不开读大量的书籍甚至标准库文档，我给大家整理了一下 C++ 必看经典书籍
+
+![](https://cdn.how2cs.cn/csguide/020210.jpg)
+
+有需要自取: [C++必读书籍(含下载方式)](/resource/cpp.html)
 
 在这里，我也把 C++ 学习初略的分为几个层次：
 
@@ -315,5 +319,12 @@ C++ Reference. [https://en.cppreference.com](https://en.cppreference.comC++ )
 
 Core Guidelines. [https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
 
+给大家整理了一下 C++ 必看经典书籍
 
-好啦，以上就是关于【系统学习C++】的分享啦，觉得不错的话，**不要吝啬你的点赞和分享哟~**
+![](https://cdn.how2cs.cn/csguide/020210.jpg)
+
+有需要自取: [C++必读书籍(含下载方式)](/resource/cpp.html)
+
+好啦，以上就是关于【系统学习C++】的分享啦~
+
+觉得不错的话，**不要吝啬你的点赞和分享哟~**
