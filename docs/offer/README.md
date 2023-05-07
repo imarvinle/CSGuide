@@ -7,6 +7,7 @@
 * [一文搞懂互联网秋招](/offer/qiuzhao.html)
 * [计算机校招如何高效复习?](/offer/how_to_review.html)
 * [技术岗简历如何写?](/offer/how_to_resume.html)
+* [互联网简约简历下载](/offer/resume.html)
 
 
 ⛽ 加油，祝大家都能拿到满意的offer~
