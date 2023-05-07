@@ -53,11 +53,3 @@
 
 * [公众号](https://mp.weixin.qq.com/s/uq67R4jHpYkbMUQqIBgpHA)
 
-**平常原创的计算机学习、CS之路、大厂经验、编程学习干货、C++、Java、校招、免费的资源等等，欢迎扫码关注~**
-
-![编程指北公众号](https://cdn.how2cs.cn/csguide/145019.png)
-
-
-
-
-
