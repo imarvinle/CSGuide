@@ -9,7 +9,7 @@ meta:
 
 # 如何高效阅读计算机类书籍？
 
-在这篇[精简版-书单](https://www.yuque.com/csguide/index/ui00ghesgy9nvtx8) 文章中，我提到大学买了很多书，也看了很多技术书。
+在这篇[精简版-书单](/books/less_books.html) 文章中，我提到大学买了很多书，也看了很多技术书。
 
 所以有不少同学在问我，这么多书都看完了么？
 
