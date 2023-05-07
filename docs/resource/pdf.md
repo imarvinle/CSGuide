@@ -15,18 +15,13 @@ meta:
 
 所以我在这里列出的书，尽量保持少，精简，少即是多。
 
-我主要做后台开发的，所以推荐的书可能偏后台一点，但是一些基础书都是类似的。
+在这里给大家分享一份我整理的电子书库，绝不是在网上那种打包下载的，而是自己需要学到某个方向知识的时候，去网上挨个找的，最后汇总而成。
 
-这是我大学买过看过的一些书:
+**这部分我是会不断把它完善的，当成自己的小电子书库，不多，但贵在精：**
 
-<p align="center">
-  <img src="https://cdn.how2cs.cn/gzh/008i3skNgy1gshj5lzpurj306k0gm3ze.jpg" alt="计算机书单" width="auto" height="auto">
-</p>
+![计算机书籍PDF](https://cdn.how2cs.cn/csguide/103902-1.png)
 
-
-微信搜索「**编程指北**」关注后在后台回复「**书单**」即可获取收藏本文书单链接。
-
-回复「**pdf**」即可获取本文提到的书籍电子版PDF
+微信搜索「**编程指北**」关注后在后台「**pdf**」即可获取本文提到的书籍电子版PDF
 
 <p align="center">
   <img src="https://cdn.how2cs.cn/csguide/095140.jpg" alt="计算机书单" width="auto" height="auto">
@@ -34,6 +29,12 @@ meta:
 
 <center>👆也可以截图微信扫描上方二维码， 回复「<font face="黑体" size=4 color="red">pdf</font>
 」即可获取</center>
+
+这是我大学买过看过的一些书:
+
+<p align="center">
+  <img src="https://cdn.how2cs.cn/gzh/008i3skNgy1gshj5lzpurj306k0gm3ze.jpg" alt="计算机书单" width="auto" height="auto">
+</p>
 
 ## 一、C语言
 
