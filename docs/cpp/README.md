@@ -5,7 +5,7 @@
 
 ![](https://cdn.how2cs.cn/csguide/041351.png)
 
-[点击查看目录](/cpp/intro.html)
+[！！！！点击这里查看目录](/cpp/intro.html)
 
 ## 一、C++ 面试重点
 
