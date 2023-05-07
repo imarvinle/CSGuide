@@ -1,4 +1,5 @@
 ---
+editLink: false
 title: 深入理解计算机系统进阶之路书单(含下载方式)
 meta:
   - name: description

@@ -1,5 +1,6 @@
 ---
 title: C++必看经典书单(含下载方式)
+editLink: false
 meta:
   - name: description
     content:  C++必看经典书单(含下载方式)，计算机非常经典的书籍，黑皮书

@@ -1,4 +1,5 @@
 ---
+editLink: false
 title: 计算机必看经典书单(含下载方式)
 meta:
   - name: description

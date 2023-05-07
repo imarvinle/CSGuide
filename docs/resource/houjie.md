@@ -1,4 +1,5 @@
 ---
+editLink: false
 title: 侯捷C++视频全系列，包括C++面向对象开发、STL标准库与泛型编程、C++11、C++14、内存管理、C++程序生前死后
 meta:
   - name: description

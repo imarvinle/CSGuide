@@ -1,5 +1,6 @@
 ---
 layout: NoYinliu
+editLink: false
 ---
 
 # 编程指北
