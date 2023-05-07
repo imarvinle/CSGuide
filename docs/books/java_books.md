@@ -1,4 +1,13 @@
-# Java 书籍推荐 & 阅读顺序
+---
+title: Java 书籍推荐及阅读顺序
+meta:
+  - name: description
+    content:  为初学者提供 Java 学习书籍的推荐及阅读顺序，涵盖 Java 语言基础、进阶、JVM、并发、网络编程、Java Web、设计、架构等领域，旨在帮助您系统学习 Java 编程技术。
+  - name: keywords
+    content: Java、书籍推荐、阅读顺序、Java基础、Java进阶、JVM、并发、网络编程、Java Web、设计、架构
+---
+
+# Java 书籍推荐及阅读顺序
 
 之前有大一的读者说他们学校是用 Java 作为入门编程语言，觉得学完语法不知道如何深入学习，在网上搜了几本书，但是又不知道从何下手，以及阅读顺序。
 
