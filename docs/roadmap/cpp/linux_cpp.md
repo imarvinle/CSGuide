@@ -553,7 +553,7 @@ https://github.com/qinguoyi/TinyWebServer: 这是 Github 上Star 比较多的项
 另外，极客时间的《MySQL45讲》也非常不错，很多篇幅都是面试常考的点：
 比如 **一条 SQL 查询/更新 语句的底层执行流程**
 ![](https://cdn.how2cs.cn/csguide/114825.png)
-学习地址：[http://gk.link/a/10JVv][http://gk.link/a/10JVv]
+学习地址：[http://gk.link/a/10JVv](http://gk.link/a/10JVv)
 
 ## 十、算法和数据结构
 ### 10.1 必备知识
