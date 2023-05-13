@@ -21,7 +21,7 @@ meta:
   - [操作系统系统书籍分类推荐](/roadmap/basic/os_book.html)
   - [计算机网络超详细系统学习路线](/roadmap/basic/how_to_learn_networking.html)
   - [如何系统学习网络编程](/roadmap/basic/network_programming_learning_path.html)
-
+  - [编译原理系统学习路线](/roadmap/basic/compiler.html)
 - **C++方向学习路线** 👇
   - [C++ 语言超详细系统学习路线](/roadmap/cpp/how_to_learn_cpp.html)
   - [Linux C++ 后台开发系统学习路线](/roadmap/cpp/linux_cpp.html)
