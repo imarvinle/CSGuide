@@ -55,7 +55,7 @@ public:
 
 为确保客户不忘记在DBConnection对象身上调用 close()，一个合理的想法是创建一个用来管理DBConection资源的class，并在其析构函数中调用close。
 
-这就是著名的以对象管理资源即 RAII（参考这篇: [**RAII如何理解**](http://localhost:1024/cpp/memory/raii_in_cpp.html)）。
+这就是著名的以对象管理资源即 RAII（参考这篇: [**RAII如何理解**](https://csguide.cn/cpp/memory/raii_in_cpp.html)）。
 
 ```cpp
 //这个class用来管理DBConnection对象
