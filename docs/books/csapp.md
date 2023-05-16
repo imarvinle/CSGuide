@@ -4,7 +4,7 @@ meta:
   - name: description
     content:  如何阅读深入理解计算机系统，为什么要读这本书，CSAPP的看书方法，深入理解计算机系统相关资源推荐
   - name: keywords
-    content: 计算机书籍推荐、深入理解计算机系统、CSAPP、预处理、编译、内存管理
+    content: 深入理解计算机系统, 阅读方法, CSAPP
 ---
 
 # 如何阅读《深入理解计算机系统》

@@ -4,7 +4,7 @@ meta:
   - name: description
     content:  如何系统学习Redis，Redis 有哪些应用，后端开发冲击大厂，KV存储
   - name: keywords
-    content: Redis、高性能、AOF、RDB、Redis应用、键值数据库
+    content: Redis, 学习路线, 高性能, AOF, RDB
 ---
 
 # Redis 超详细系统学习路线（2023）

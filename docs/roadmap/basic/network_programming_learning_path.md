@@ -4,7 +4,7 @@ meta:
   - name: description
     content:  如何系统学习网络编程、Socket，网络编程该怎么去学习，冲击大厂，TCP、HTTP、网络协议
   - name: keywords
-    content: 网络编程、Reactor、IO模型、计算机网络、TCP、UDP、HTTPS、IP、协议、MAC地址、IP地址
+    content: 网络编程, 学习路线, Reactor, O模型, 计算机网络
 ---
 
 # 如何系统学习网络编程（2023）

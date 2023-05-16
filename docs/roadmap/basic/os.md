@@ -4,7 +4,7 @@ meta:
   - name: description
     content:  如何学习操作系统，操作系统书籍有哪些， 操作系统源码，进程、线程、操作系统应用场景
   - name: keywords
-    content: 操作系统、CS、OS、xv6、现代操作系统、操作系统概念、30天自制操作系统、Linux内核源代码分析
+    content: 操作系统, 学习路线, OS, 现代操作系统、操作系统概念
 ---
 
 # 操作系统超详细系统学习路线（2023）

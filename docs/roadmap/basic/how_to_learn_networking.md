@@ -4,7 +4,7 @@ meta:
   - name: description
     content:  如何系统学习计算机网络，计算机网络该怎么去学习，冲击大厂，TCP、HTTP、网络协议
   - name: keywords
-    content: 计算机网络、TCP、UDP、HTTPS、IP、协议、MAC地址、IP地址
+    content: 计算机网络, 学习路线, TCP, UDP, HTTPS, MAC地址, IP地址
 ---
 
 # 计算机网络超详细系统学习路线（2023）

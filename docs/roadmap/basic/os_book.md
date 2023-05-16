@@ -4,7 +4,7 @@ meta:
   - name: description
     content:  如何学习操作系统，操作系统书籍有哪些， 操作系统源码
   - name: keywords
-    content: 操作系统、现代操作系统、操作系统概念、30天自制操作系统、Linux内核源代码分析
+    content: 操作系统, 书籍, 现代操作系统, 操作系统概念
 ---
 
 # 操作系统系统书籍分类推荐

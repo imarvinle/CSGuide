@@ -4,7 +4,7 @@ meta:
   - name: description
     content:  如何系统学习编译原理，编译原理学习资料和学习方法
   - name: keywords
-    content: 编译原理、编译器、有限状态机、上下文无关文法、递归下降分析、LL、LR、代码生成
+    content: 编译原理, 编译器, 有限状态机, 上下文无关文法, 递归下降分析
 ---
 
 # 编译原理系统学习路线（2023）
@@ -19,7 +19,7 @@ meta:
 
 当然，如果现在需要用到编译原理的知识，大多数场景都直接使用 yacc(自己定义文法，会帮你生成语法分析器)，根本不会自己手动去实现语法分析。
 
-但至少学完编译原理，会用递归下降解析各种四则运算、json、xml 了。
+<!-- 但至少学完编译原理也是有好处的，至少会用递归下降解析各种四则运算、json、xml 了，说不定什么时候你会用到编译原理里面所学的知识，有本讲编译原理的书叫“龙书”，也侧面说明编译原理属于那种屠龙技~ -->
 
 ## 学编译原理有什么好处？
 
@@ -60,17 +60,19 @@ meta:
 > 在本课程的这些系列实验中，您的工作是为 MiniJava 编程语言从头开始设计和实现一个名为 Tiger 的编译器。MiniJava是Java编程语言的一个非平凡的子集，在Tiger书的附录中有描述。同时，您将使用 Java 作为实现编程语言（因此我们遵循编译器设计史上著名的先有鸡还是先有蛋的传统）。在本课程结束时，您将深入学习如何使用 Java 为现代 OO 语言（如 Java）实现编译器。
 有六个实验室，并计划进行最终项目：
 
-* 实验 1：词法分析和解析器。在本实验中，你将为 Tiger 设计和实现前端（词法分析器和解析器）: [http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/labs/lab1/index.html](http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/labs/lab1/index.html)
+这门课有六个实验：
 
-* 实验2：抽象语法树和阐述器。本实验将要求您设计和实现抽象语法树并构建一个阐述器: [http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/labs/lab2/index.html](http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/labs/lab2/index.html)
+* 实验 1：词法分析和解析器，实验 1 将为 Tiger 设计和实现前端（词法分析器和解析器）: [http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/labs/lab1/index.html](http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/labs/lab1/index.html)
 
-* 实验3：代码生成器。在第三个实验中，您将设计和实现多个代码生成器：C 代码生成器、Java 字节码生成器、Google Dalvik 生成器和 x86 代码生成器: [http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/labs/lab3/index.html](http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/labs/lab3/index.html)
+* 实验2：抽象语法树。本实验将要求设计和实现抽象语法树并构建一个Elaborator: [http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/labs/lab2/index.html](http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/labs/lab2/index.html)
 
-* 实验4：垃圾收集器。在第 4 个实验室中，您将构建一个垃圾收集器并将其链接到 Tiger: [http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/labs/lab4/index.html](http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/labs/lab4/index.html)
+* 实验3：代码生成器。在第三个实验中，将设计和实现多个代码生成器：C 代码生成器、Java 字节码生成器、Google Dalvik 生成器和 x86 代码生成器: [http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/labs/lab3/index.html](http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/labs/lab3/index.html)
 
-* 实验 5：优化。本练习将要求您向 Tiger 添加优化，以使其能够生成更高效的目标代码: [http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/labs/lab5/index.html](http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/labs/lab5/index.html)
+* 实验4：垃圾收集器。在第 4 个实验室中，将构建一个垃圾收集器并将其链接到 Tiger: [http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/labs/lab4/index.html](http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/labs/lab4/index.html)
 
-* 实验 6：注册分配器。在第 6 个实验中，您将为 Tiger 编写寄存器分配器，以便 Tiger 编译器生成高效的生产质量本机代码。
+* 实验 5：优化。这个实验要求向 Tiger 添加优化，使其能够生成更高效的目标代码: [http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/labs/lab5/index.html](http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/labs/lab5/index.html)
+
+* 实验 6：注册分配器。在第 6 个实验中，将为 Tiger 编写寄存器分配器，方便Tiger 编译器生成高效的生产质量本机代码。
 
 
 ## 斯坦佛 CS 143 课程
