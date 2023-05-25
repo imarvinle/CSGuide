@@ -9,9 +9,11 @@ meta:
 
 # Java 后台超详细系统学习路线（2023）
 
+> 原文首发于个人公众号: [万字长文 | 这可能是东半球最保姆级的Java后台开发学习路线（上）](https://mp.weixin.qq.com/s/VXjBG_0woAbjvgewpKl52g)
+
 大家好，我是小北。
 
-之前写过一版 [Linux C++ 后台开发学习路线](/roadmap/cpp/linux_cpp.html)，这个路线图在全网已经有 10 w+ 读者看过了，很多读者看过这个路线找到了学习方向。
+之前写过一版 [Linux C++ 后台开发学习路线](https://csguide.cn/roadmap/cpp/linux_cpp.html)，这个路线图在全网已经有 10 w+ 读者看过了，很多读者看过这个路线找到了学习方向。
 
 但是现在学 C++ 的相对 Java 来说少很多，很多学 Java 的读者也一直在催我出 Java 版。
 
