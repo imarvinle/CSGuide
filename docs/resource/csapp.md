@@ -23,8 +23,8 @@ meta:
 
 **我电子版本（非高清版）放这，有需自取~**
 
-链接： [https://pan.baidu.com/s/1H9sqUOwjEafhs0B2Bhx2gw](https://pan.baidu.com/s/1H9sqUOwjEafhs0B2Bhx2gw)
-提取码：**fvdw**
+链接： [https://pan.baidu.com/s/1zMYfT7fSgDx5VcfnhUHW9g?pwd=v6xz](https://pan.baidu.com/s/1zMYfT7fSgDx5VcfnhUHW9g?pwd=v6xz)
+提取码：**v6xz**
 
 
 ::: tip
