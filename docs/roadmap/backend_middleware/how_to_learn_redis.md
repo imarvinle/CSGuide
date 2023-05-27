@@ -1,5 +1,6 @@
 ---
 title: Redis 超详细系统学习路线（2023）
+description: 如何系统学习Redis，Redis 有哪些应用，后端开发冲击大厂，KV存储
 meta:
   - name: description
     content:  如何系统学习Redis，Redis 有哪些应用，后端开发冲击大厂，KV存储

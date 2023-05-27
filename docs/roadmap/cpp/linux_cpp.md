@@ -1,5 +1,6 @@
 ---
 title: Linux C++ 后台开发系统学习路线（2023）
+description: Linux C/C++ 后台服务器开发学习之路该怎么去学习，冲击大厂，C++ 应用场景，在大公司都有哪些岗位？
 meta:
   - name: description
     content:  Linux C/C++ 后台服务器开发学习之路该怎么去学习，冲击大厂，C++ 应用场景，在大公司都有哪些岗位？

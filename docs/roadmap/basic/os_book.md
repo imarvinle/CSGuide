@@ -1,5 +1,6 @@
 ---
 title: 操作系统系统书籍分类推荐
+description: 如何学习操作系统，操作系统书籍有哪些， 操作系统源码
 meta:
   - name: description
     content:  如何学习操作系统，操作系统书籍有哪些， 操作系统源码

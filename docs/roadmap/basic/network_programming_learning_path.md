@@ -1,5 +1,6 @@
 ---
 title: 如何系统学习网络编程（2023）
+description: 如何系统学习网络编程、Socket，网络编程该怎么去学习，冲击大厂，TCP、HTTP、网络协议
 meta:
   - name: description
     content:  如何系统学习网络编程、Socket，网络编程该怎么去学习，冲击大厂，TCP、HTTP、网络协议

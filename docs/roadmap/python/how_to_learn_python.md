@@ -1,5 +1,6 @@
 ---
 title: Python超详细一条龙版学习路线（2023）
+description:  Python语言学习，Python应用场景，Python简介，Python特点
 meta:
   - name: description
     content: Python语言学习，Python应用场景，Python简介，Python特点

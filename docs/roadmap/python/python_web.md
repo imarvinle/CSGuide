@@ -1,5 +1,6 @@
 ---
 title: Python Web 开发系统学习路线（2023就业版）
+description:  Python Web学习，Python应用场景，Python简介，Python特点
 meta:
   - name: description
     content: Python Web学习，Python应用场景，Python简介，Python特点

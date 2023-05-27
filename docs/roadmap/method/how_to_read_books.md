@@ -1,5 +1,6 @@
 ---
 title: 如何高效阅读计算机类书籍？
+description: 计算机大黑书如何看，计算机书籍如何高效阅读，看书的方法
 meta:
   - name: description
     content: 计算机大黑书如何看，计算机书籍如何高效阅读，看书的方法

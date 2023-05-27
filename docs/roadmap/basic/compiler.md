@@ -1,5 +1,6 @@
 ---
 title: 编译原理系统学习路线（2023）
+description: 如何系统学习编译原理，编译原理学习资料和学习方法
 meta:
   - name: description
     content:  如何系统学习编译原理，编译原理学习资料和学习方法
