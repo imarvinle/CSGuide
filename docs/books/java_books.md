@@ -1,5 +1,6 @@
 ---
 title: Java 书籍推荐及阅读顺序
+description: 为初学者提供 Java 学习书籍的推荐及阅读顺序，涵盖 Java 语言基础、进阶、JVM、并发、网络编程、Java Web、设计、架构等领域，旨在帮助您系统学习 Java 编程技术。
 meta:
   - name: description
     content:  为初学者提供 Java 学习书籍的推荐及阅读顺序，涵盖 Java 语言基础、进阶、JVM、并发、网络编程、Java Web、设计、架构等领域，旨在帮助您系统学习 Java 编程技术。

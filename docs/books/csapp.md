@@ -1,10 +1,11 @@
 ---
 title: 如何阅读《深入理解计算机系统》
+description:  如何阅读深入理解计算机系统（CSAPP），为什么要读CSAPP，CSAPP的看书方法，深入理解计算机系统相关资源推荐
 meta:
   - name: description
-    content:  如何阅读深入理解计算机系统，为什么要读这本书，CSAPP的看书方法，深入理解计算机系统相关资源推荐
+    content:  如何阅读深入理解计算机系统（CSAPP），为什么要读CSAPP，CSAPP的看书方法，深入理解计算机系统相关资源推荐
   - name: keywords
-    content: 深入理解计算机系统, 阅读方法, CSAPP
+    content: 深入理解计算机系统, 下载, 阅读方法, CSAPP
 ---
 
 # 如何阅读《深入理解计算机系统》
