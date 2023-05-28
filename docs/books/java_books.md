@@ -109,3 +109,12 @@ meta:
 **java 版本的刷题笔记、面试突击总结64讲、简历模板，我觉得对大家系统学习 Java 会很有帮助：**
 
 ![](https://cdn.how2cs.cn/gzh/008i3skNgy1gq69ddurxhj30i60cygp9.jpg)
+
+在我公众号「编程指北」后台回复「**java**」即可获取~
+
+<p align="center">
+  <img src="https://cdn.how2cs.cn/csguide/095140.jpg" alt="计算机书单" width="auto" height="auto">
+</p>
+
+<center>👆也可以截图微信扫描上方二维码， 回复「<font face="黑体" size=4 color="red">java</font>
+」即可获取</center>

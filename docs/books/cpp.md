@@ -270,7 +270,15 @@ meta:
 
 ![](https://cdn.how2cs.cn/gzh/008eGmZEgy1gmsxf1nt6dj30zy0n6124.jpg)
 
-在我公众号后台回复「**cpp**」即可获取~
+在我公众号「编程指北」后台回复「**cpp**」即可获取~
+
+
+<p align="center">
+  <img src="https://cdn.how2cs.cn/csguide/095140.jpg" alt="计算机书单" width="auto" height="auto">
+</p>
+
+<center>👆也可以截图微信扫描上方二维码， 回复「<font face="黑体" size=4 color="red">cpp</font>
+」即可获取</center>
 
 好了，今天的分享就到这了，
 
