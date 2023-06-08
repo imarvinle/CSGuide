@@ -1,3 +1,12 @@
+---
+title: Leetcode 206.反转链表
+description:  Leetcode第206题，反转链表解题思路和题解
+meta:
+  - name: description
+    content:   Leetcode第206题，反转链表解题思路和题解
+  - name: keywords
+    content: 206.反转链表、Leetcode、剑指offer
+---
 
 # 206.反转链表
 
