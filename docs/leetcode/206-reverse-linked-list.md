@@ -8,12 +8,13 @@
 
 ### 示例
 
-![](https://cdn.how2cs.cn/csguide/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_fa06f681-5748-4b22-b944-7d7f4077c829.png)
+>输入: 1->2->3->4->5->NULL
+>输出: 5->4->3->2->1->NULL
 
 
-输入：head = [1,2,3,4,5]
-输出：[5,4,3,2,1]
+leetcode链接：
 
+[https://leetcode.cn/problems/reverse-linked-list/](https://leetcode.cn/problems/reverse-linked-list/)
 
 ## 解题思路
 
