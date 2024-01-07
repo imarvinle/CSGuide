@@ -1,5 +1,5 @@
 ---
-title: C++ 语言超详细系统学习路线（2023）
+title: C++ 语言超详细系统学习路线（2024年最新）
 description: 如何系统学习C++语言，C++该怎么去学习，冲击大厂，C++ 应用场景，在大公司都有哪些岗位？
 meta:
   - name: description
@@ -8,7 +8,7 @@ meta:
     content: C++、C、后台开发、后端开发、STL、C++标准库、学习路线
 ---
 
-# C++ 语言超详细系统学习路线（2023）
+# C++ 语言超详细系统学习路线（2024年最新）
 
 > 原文首发于个人公众号: [如何系统学习C++？](https://mp.weixin.qq.com/s/WW_X12bTm94iaCgWBgYtJw)
 

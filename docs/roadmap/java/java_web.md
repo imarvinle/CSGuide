@@ -1,5 +1,5 @@
 ---
-title: Java 后台超详细系统学习路线（2023）
+title: Java 后台超详细系统学习路线（2024年最新）
 description: Java 后台服务器开发学习之路该怎么去学习，冲击大厂，Java 应用场景，Java基础怎么学
 meta:
   - name: description
@@ -8,7 +8,7 @@ meta:
     content: Java、JavaSe、JDK、面向对象、后台开发、后端开发、服务端开发、学习路线
 ---
 
-# Java 后台超详细系统学习路线（2023）
+# Java 后台超详细系统学习路线（2024年最新）
 
 > 原文首发于个人公众号: [万字长文 | 这可能是东半球最保姆级的Java后台开发学习路线（上）](https://mp.weixin.qq.com/s/VXjBG_0woAbjvgewpKl52g)
 
