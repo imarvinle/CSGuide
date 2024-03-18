@@ -1,5 +1,5 @@
 ---
-title: 深入理解计算机系统（原书第三版）PDF高清中文版
+title: 深入理解计算机系统 CSAPP（原书第三版）PDF高清中文版
 editLink: false
 meta:
   - name: description
@@ -8,7 +8,7 @@ meta:
     content: 深入理解计算机系统PDF、高清、影印版、CSAPP PDF、深入理解计算机系统第三版
 ---
 
-# 深入理解计算机系统（原书第三版）PDF高清中文版
+# 深入理解计算机系统 CSAPP（原书第三版）PDF高清中文版
 
 **深入理解计算机系统 PDF 深入理解计算机系统 pdf， 这本书的全名是：Computer Systems：A Programmer’s Perspective（所以它又被称为 CSAPP），个人习惯把它翻译为程序员所需了解的计算机系统知识，尽管土了些，但更名副其实。**
 
