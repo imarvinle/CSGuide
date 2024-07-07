@@ -85,7 +85,7 @@ char c = 'c';
 像上面这种将高位字节放在内存低地址的方式叫做**大端**
 反之，将低位字节放在内存低地址的方式就叫做**小端**：
 
-（关于字节序可以看这篇文章: [字节序](http://localhost:1024/cpp/basics/byte_order.html)
+（关于字节序可以看这篇文章: [字节序](https://csguide.cn/cpp/basics/byte_order.html#%E5%A4%A7%E7%AB%AF%E5%AD%97%E8%8A%82%E5%BA%8F-big-endian)
 
 ![](https://cdn.how2cs.cn/gzh/0081Kckwgy1gk74584w6tj30rs0b840p.jpg)
 
