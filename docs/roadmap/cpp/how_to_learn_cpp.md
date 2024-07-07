@@ -12,6 +12,8 @@ meta:
 
 > 原文首发于个人公众号: [如何系统学习C++？](https://mp.weixin.qq.com/s/WW_X12bTm94iaCgWBgYtJw)
 
+
+
 送给学习 C++ 的同学一段翁凯老师讲课说的话： 
 > 学 C++ (计算机)一定要有一个非常强大的心理状态
 >
@@ -39,7 +41,16 @@ C++ 最大的缺点就是语法复杂，而且难学难精。
 
 学好过程，一定离不开读大量的书籍甚至标准库文档，我给大家整理了一下 C++ 必看经典书籍
 
+微信搜索「**编程指北**」关注后在后台「**cpp**」即可获取本文提到的书籍电子版PDF以及C++书单大全：
+
 ![](https://cdn.how2cs.cn/csguide/020210.jpg)
+
+<p align="center">
+  <img src="https://cdn.how2cs.cn/csguide/095140.jpg" alt="C++书单" width="auto" height="auto">
+</p>
+
+<center>👆也可以截图微信扫描上方二维码， 回复「<font face="黑体" size=4 color="red">cpp</font>
+」即可获取</center>
 
 有需要自取: [C++必读书籍(含下载方式)](/resource/cpp.html)
 

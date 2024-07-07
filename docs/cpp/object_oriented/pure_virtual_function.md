@@ -1,3 +1,11 @@
+<!--
+ * @Descripttion: 
+ * @version: 1.0.0
+ * @Author: marvinle
+ * @Date: 2023-12-05 22:47:23
+ * @LastEditors: marvinle
+ * @LastEditTime: 2024-04-08 00:42:14
+-->
 # C++ 纯虚函数是什么？
 
 **面试高频指数：★★★☆☆**
@@ -66,5 +74,5 @@ int main() {
 
 在 `main()` 函数中，创建了 `Circle` 和 `Square` 的实例，并且使用指向基类 `Shape` 的指针来调用 `draw()` 函数。
 
-由于 `Shape` 是一个抽象类，能创建 `Shape` 的实例，但是可以使用 `Shape` 类型指针来指向派生类，从而实现多态。
+由于 `Shape` 是一个抽象类，不能创建 `Shape` 的实例，但是可以使用 `Shape` 类型指针来指向派生类，从而实现多态。
 
