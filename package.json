@@ -17,11 +17,13 @@
     "@xiaopanda/vuepress-plugin-code-copy": "^1.0.3",
     "screenfull": "^5.1.0",
     "vuepress": "^1.9.9",
+    "vuepress-plugin-readmore-popular": "^0.0.17",
     "vuepress-plugin-seo": "0.1.4",
     "vuepress-plugin-sitemap": "^2.3.1",
     "vuepress-plugin-thirdparty-search": "^1.0.2"
   },
   "dependencies": {
-    "vuepress-plugin-code-copy": "^1.0.6"
+    "vuepress-plugin-code-copy": "^1.0.6",
+    "webpack": "^4.47.0"
   }
 }

@@ -6,6 +6,8 @@ docs/.vuepress/
 docs/.gitignore
 docs/.vuepress/dist/
 docs/private
+docs/courses
 docs/README.md
+package-lock.json
 yarn.lock
 
