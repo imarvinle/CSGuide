@@ -1,11 +1,3 @@
-<!--
- * @Descripttion: 
- * @version: 1.0.0
- * @Author: marvinle
- * @Date: 2023-12-05 22:47:23
- * @LastEditors: marvinle
- * @LastEditTime: 2024-04-08 00:42:14
--->
 # C++ 纯虚函数是什么？
 
 **面试高频指数：★★★☆☆**
