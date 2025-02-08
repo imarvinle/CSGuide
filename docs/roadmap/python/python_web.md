@@ -1,5 +1,5 @@
 ---
-title: Python Web 开发系统学习路线（2024年就业版）
+title: Python Web 开发系统学习路线（2025年就业版）
 description:  Python Web学习，Python应用场景，Python简介，Python特点
 meta:
   - name: description
@@ -8,7 +8,7 @@ meta:
     content: Python Web、爬虫、Python后台、python自动化运维、Python就业
 ---
 
-# Python Web 开发系统学习路线（2024就业版）
+# Python Web 开发系统学习路线（2025就业版）
 
 国内目前用 Python 做后台开发的公司不多，据我所知就知乎、腾讯云控制台是 Python开发的，但是由于 Python 是动态语言，对于这种大型项目维护起来非常难受。
 
