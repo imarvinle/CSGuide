@@ -1,5 +1,5 @@
 ---
-title: Python超详细一条龙版学习路线（2024年最新）
+title: Python超详细一条龙版学习路线（2025年最新）
 description:  Python语言学习，Python应用场景，Python简介，Python特点
 meta:
   - name: description
@@ -8,7 +8,7 @@ meta:
     content: Python、爬虫、Python后台、python自动化运维、Python就业
 ---
 
-#  Python超详细一条龙版学习路线（2024年最新）
+#  Python超详细一条龙版学习路线（2025年最新）
 
 ## 一、前言
 
