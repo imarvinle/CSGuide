@@ -8,7 +8,7 @@ meta:
     content: C++、C、Linux、后台开发、后端开发、服务端开发、学习路线
 ---
 
-# Linux C++ 后台开发系统学习路线（2024年最新）
+# Linux C++ 后台开发系统学习路线（2025年最新）
 
 > 原文首发于个人公众号: [万字长文 | 这可能是东半球最保姆级的后台服务器开发学习路线](https://mp.weixin.qq.com/s/7xANFCFUd528Lch3lqcbRg)
 
