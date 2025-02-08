@@ -8,7 +8,7 @@ meta:
     content: C++、C、后台开发、后端开发、STL、C++标准库、学习路线
 ---
 
-# C++ 语言超详细系统学习路线（2024年最新）
+# C++ 语言超详细系统学习路线（2025年最新）
 
 > 原文首发于个人公众号: [如何系统学习C++？](https://mp.weixin.qq.com/s/WW_X12bTm94iaCgWBgYtJw)
 
