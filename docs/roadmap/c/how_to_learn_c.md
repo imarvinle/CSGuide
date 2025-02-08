@@ -1,5 +1,5 @@
 ---
-title: C 语言超详细系统学习路线（2024年最新）
+title: C 语言超详细系统学习路线（2025年最新）
 description: 如何系统学习C语言，C语言该怎么去学习，冲击大厂，指针和内存如何深入学习，C语言和计算机系统
 meta:
   - name: description
@@ -9,7 +9,7 @@ meta:
 ---
 
 
-# C 语言超详细系统学习路线（2024年最新）
+# C 语言超详细系统学习路线（2025年最新）
 
 > 原文首发于个人公众号: [如何系统学习C语言](https://mp.weixin.qq.com/s/SQESC1_zv-EfNzyPrA8HsQ)
 
