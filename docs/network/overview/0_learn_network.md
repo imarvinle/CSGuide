@@ -15,7 +15,6 @@ meta:
 很多同学在学习计算机网络的时候，有个很大的误区，那就是挨个的背下每一个网络协议的作用、字段构成，以及通信双方的交互状态机：
 
 
-
 TCP 头部：
 
 ![TCP 头部字段](https://cdn.how2cs.cn/2024-11-16-tcp-header-with-options-adjusted.svg)
