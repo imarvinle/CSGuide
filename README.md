@@ -59,3 +59,10 @@
 
 ### License
 This project is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+附加说明：
+- 禁止将本仓库内容用于：
+  * 付费课程/培训班教材
+  * 知识付费平台内容
+  * 商业性面试辅导服务
+- 引用内容需在显著位置标注来源链接
