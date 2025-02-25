@@ -175,17 +175,17 @@ struct SomeData {
     }
 };
 ```
-上面这段代码需要在NeedCallSomeAPI函数中调用SomeAPI，而SomeAPI需要的是一个std::shared_ptr<SomeData>的实参。这个时候应该怎么做？ 这样吗？
+上面这段代码需要在NeedCallSomeAPI函数中调用SomeAPI，而SomeAPI需要的是一个std::shared_ptr< SomeData >的实参。这个时候应该怎么做？ 这样吗？
 ```cpp
 struct SomeData {
     void NeedCallSomeAPI() {
-        SomeAPI(std::shared_ptr<SomeData>{this});
+        SomeAPI(std::shared_ptr< SomeData >{this});
     }
 };
 ```
-上面的做法是错误的，因为SomeAPI调用结束后std::shared_ptr<SomeData>对象的引用计数会降为0，导致 this 被意外释放。
+上面的做法是错误的，因为SomeAPI调用结束后std::shared_ptr< SomeData >对象的引用计数会降为0，导致 this 被意外释放。
 
-这种情况下，我们需要使用std::enable_shared_from_this ，使用方法很简单，只需要让SomeData继承std::enable_shared_from_this<SomeData>，然后调用shared_from_this，例如：
+这种情况下，我们需要使用std::enable_shared_from_this ，使用方法很简单，只需要让SomeData继承std::enable_shared_from_this< SomeData >，然后调用shared_from_this，例如：
 
 ```cpp
 #include <memory>
