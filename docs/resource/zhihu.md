@@ -1,5 +1,4 @@
 ---
-layout: NoYinliu
 editLink: false
 ---
 

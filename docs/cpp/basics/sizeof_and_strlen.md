@@ -6,7 +6,7 @@
 
 接下来讲一下 sizeof 和 strlen。
 
-strlen 是头文件 <cstring> 中的函数，而 sizeof 是 C++ 中的运算符。
+strlen 是头文件 cstring 中的函数，而 sizeof 是 C++ 中的运算符。
 
 ## strlen
 

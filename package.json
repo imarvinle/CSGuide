@@ -1,29 +1,25 @@
 {
-  "name": "csguide",
+  "name": "csguide-hope",
+  "description": "编程指北",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "xiaobei",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "deploy": "bash deploy.sh"
+    "docs:build": "vuepress-vite build docs",
+    "docs:clean-dev": "vuepress-vite dev docs --clean-cache",
+    "docs:dev": "vuepress-vite dev docs",
+    "docs:update-package": "npx vp-update"
   },
   "devDependencies": {
-    "@vssue/api-github-v3": "^1.4.7",
-    "@vuepress/plugin-back-to-top": "^1.9.9",
-    "@vuepress/plugin-google-analytics": "^1.9.9",
-    "@vuepress/plugin-pwa": "^1.9.9",
-    "@xiaopanda/vuepress-plugin-code-copy": "^1.0.3",
-    "screenfull": "^5.1.0",
-    "vuepress": "^1.9.9",
-    "vuepress-plugin-readmore-popular": "^0.0.17",
-    "vuepress-plugin-seo": "0.1.4",
-    "vuepress-plugin-sitemap": "^2.3.1",
-    "vuepress-plugin-thirdparty-search": "^1.0.2"
+    "@vuepress/bundler-vite": "2.0.0-rc.19",
+    "@vuepress/plugin-copyright": "2.0.0-rc.7",
+    "sass-embedded": "^1.85.0",
+    "vue": "^3.5.13",
+    "vuepress": "2.0.0-rc.19",
+    "vuepress-plugin-readmore-popular-next": "2.0.0-rc.18.1",
+    "vuepress-theme-hope": "2.0.0-rc.68"
   },
   "dependencies": {
-    "vuepress-plugin-code-copy": "^1.0.6",
-    "webpack": "^4.47.0"
+    "@vuepress/plugin-theme-data": "2.0.0-rc.0"
   }
 }

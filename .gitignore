@@ -8,6 +8,9 @@ docs/.vuepress/dist/
 docs/private
 docs/courses
 docs/README.md
+docs/navigation.md
+docs/portfolio.md
+docs/deploy.sh
 package-lock.json
 yarn.lock
-
+pnpm-lock.yaml
