@@ -1,14 +1,12 @@
 ---
-title: Python Web 开发系统学习路线（2025年就业版）
-description:  Python Web学习，Python应用场景，Python简介，Python特点
-meta:
-  - name: description
-    content: Python Web学习，Python应用场景，Python简介，Python特点
-  - name: keywords
-    content: Python Web、爬虫、Python后台、python自动化运维、Python就业
+title: Python Web 开发系统学习路线（2025年最新）
+description: 全面的Python Web开发学习指南，涵盖Flask、Django、FastAPI等主流框架，从基础到高级的Web开发技能，包含前后端交互、数据库操作、RESTful API设计等核心知识点。
+head:
+  - - meta
+    - name: keywords
+      content: Python Web开发,Flask教程,Django学习,FastAPI框架,Python后端开发,Web应用开发,RESTful API,Python全栈开发
 ---
 
-# Python Web 开发系统学习路线（2025就业版）
 
 国内目前用 Python 做后台开发的公司不多，据我所知就知乎、腾讯云控制台是 Python开发的，但是由于 Python 是动态语言，对于这种大型项目维护起来非常难受。
 

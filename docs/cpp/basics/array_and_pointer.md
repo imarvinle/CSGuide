@@ -1,6 +1,10 @@
-# C/C++中数组做参数退化为指针
+---
+title: C/C++中数组做参数退化为指针
+description: 本文详细介绍了C/C++中数组作为函数参数时的退化问题，包括sizeof和strlen的使用区别、数组退化为指针的原理以及如何正确获取数组长度等重要知识点。
 
-**面试高频指数：★★★★☆**
+---
+
+# C/C++中数组做参数退化为指针
 
 接着[sizeof和strlen函数](https://csguide.cn/cpp/basics/sizeof_and_strlen.html)这个话题
 

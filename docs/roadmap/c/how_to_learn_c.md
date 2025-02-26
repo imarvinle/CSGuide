@@ -1,15 +1,13 @@
 ---
 title: C 语言超详细系统学习路线（2025年最新）
-description: 如何系统学习C语言，C语言该怎么去学习，冲击大厂，指针和内存如何深入学习，C语言和计算机系统
-meta:
-  - name: description
-    content:  如何系统学习C语言，C语言该怎么去学习，冲击大厂，指针和内存如何深入学习，C语言和计算机系统
-  - name: keywords
-    content: C++、C、内存、指针、C语言、计算机系统、学习路线
+description: 编程指北整理的C语言完整学习路线，从基础语法到高级特性，包含内存管理、指针运用、数据结构实现、系统编程等核心内容，以及大量实战项目和学习资源推荐。
+head:
+  - - meta
+    - name: keywords
+      content: C语言学习路线,C语言入门教程,C语言进阶,C语言指针,C语言内存管理,C语言数据结构,C语言项目实战,系统编程,嵌入式C语言
 ---
 
 
-# C 语言超详细系统学习路线（2025年最新）
 
 > 原文首发于个人公众号: [如何系统学习C语言](https://mp.weixin.qq.com/s/SQESC1_zv-EfNzyPrA8HsQ)
 

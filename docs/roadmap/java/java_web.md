@@ -1,14 +1,11 @@
 ---
 title: Java 后台超详细系统学习路线（2025年最新）
-description: Java 后台服务器开发学习之路该怎么去学习，冲击大厂，Java 应用场景，Java基础怎么学
-meta:
-  - name: description
-    content: Java 后台服务器开发学习之路该怎么去学习，冲击大厂，Java 应用场景，Java基础怎么学
-  - name: keywords
-    content: Java、JavaSe、JDK、面向对象、后台开发、后端开发、服务端开发、学习路线
+description: 编程指北提供的Java后台开发完整学习指南，从Java基础到企业级应用开发，包含Spring全家桶、微服务架构、分布式系统、性能调优等核心技术，以及大厂面试重点和实战项目经验。
+head:
+  - - meta
+    - name: keywords
+      content: Java后台开发,Java学习路线,Spring框架,SpringBoot,SpringCloud,微服务架构,分布式系统,Java高并发,Java性能优化,Java面试题
 ---
-
-# Java 后台超详细系统学习路线（2025年最新）
 
 > 原文首发于个人公众号: [万字长文 | 这可能是东半球最保姆级的Java后台开发学习路线（上）](https://mp.weixin.qq.com/s/VXjBG_0woAbjvgewpKl52g)
 
@@ -369,7 +366,7 @@ Servlet、Tomcat -> JDBC - > HTTP 协议-> Spring MVC ->  Spring 全家桶。
 * **为什么有了 MAC 地址还要 IP 地址，IP 地址和 MAC 地址的区别是什么？**
 * **如何理解广播域和冲突域？**
 * **路由器和交换机有什么区别？**
-* **TCP 连接的本质是什么，真的是“链接”吗？（曾经被问过：Java socket 创建的 TCP 连接，对于主机挂了和 JVM 挂了有什么区别？**
+* **TCP 连接的本质是什么，真的是"链接"吗？（曾经被问过：Java socket 创建的 TCP 连接，对于主机挂了和 JVM 挂了有什么区别？**
 这些问题只有当你真正理解了才能回答出，仅仅记住协议的话，估计很难应对灵活的面试题。
 此外，网络部分还需要准备 HTTP、HTTPS，推荐：
 
