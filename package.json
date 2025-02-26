@@ -16,7 +16,7 @@
     "sass-embedded": "^1.85.0",
     "vue": "^3.5.13",
     "vuepress": "2.0.0-rc.19",
-    "vuepress-plugin-readmore-popular": "^0.0.17",
+    "vuepress-plugin-readmore-popular-next": "2.0.0-rc.18.1",
     "vuepress-theme-hope": "2.0.0-rc.68"
   },
   "dependencies": {
