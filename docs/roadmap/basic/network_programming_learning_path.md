@@ -1,11 +1,10 @@
 ---
 title: 如何系统学习网络编程（2025年最新）
-description: 如何系统学习网络编程、Socket，网络编程该怎么去学习，冲击大厂，TCP、HTTP、网络协议
-meta:
-  - name: description
-    content:  如何系统学习网络编程、Socket，网络编程该怎么去学习，冲击大厂，TCP、HTTP、网络协议
-  - name: keywords
-    content: 网络编程, 学习路线, Reactor, O模型, 计算机网络
+description: 编程指北整理的网络编程学习路线，从Socket编程基础到高性能网络模型，包含TCP/UDP编程实践、IO模型、多路复用、异步网络编程等核心技术，以及主流网络库和框架的使用指南。
+head:
+  - - meta
+    - name: keywords
+      content: 网络编程,Socket编程,TCP编程,UDP编程,IO模型,多路复用,epoll,select,异步网络编程,高性能网络,网络框架
 ---
 
 # 如何系统学习网络编程（2025年最新）

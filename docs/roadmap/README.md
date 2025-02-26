@@ -1,13 +1,12 @@
 ---
 title: 计算机学习路线大全（2025版）
-meta:
-  - name: description
-    content: 计算机专业自学、Java、C++学习路线、C、Redis学习路线、MySQL学习路线、Python学习路线、如何学习计算机
-  - name: keywords
-    content: 计算机专业自学、Java、C++学习路线、C、Redis学习路线、MySQL学习路线、Python学习路线、如何学习计算机
---- 
+description: 编程指北提供最新最全的计算机专业学习路线，包括Java、C++、Python、前端、后端、算法、数据库等全方位学习指南，助你高效掌握计算机技能。
+head:
+  - - meta
+    - name: keywords
+      content: 计算机学习路线,Java学习路线,C++学习路线,Python学习路线,前端学习路线,后端学习路线,算法学习,数据库学习,编程入门指南
+---
 
-# 计算机学习路线大全（2025版）
 
 计算机各个方向的学习路线，以及如何学习。(记得Ctrl + F 搜索自己想学的路线)
 
