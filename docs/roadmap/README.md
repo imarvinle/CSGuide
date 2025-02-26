@@ -1,5 +1,5 @@
 ---
-title: 计算机学习路线大全（2024版）
+title: 计算机学习路线大全（2025版）
 meta:
   - name: description
     content: 计算机专业自学、Java、C++学习路线、C、Redis学习路线、MySQL学习路线、Python学习路线、如何学习计算机
