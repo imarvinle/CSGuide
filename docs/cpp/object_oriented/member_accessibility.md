@@ -1,4 +1,13 @@
-# C++ 类成员访问权限
+---
+title: C++ 类成员访问权限详解
+shortTitle: C++ 类成员访问权限
+description: 本文详细介绍了C++中类成员的访问权限控制，包括public、private和protected三种访问修饰符的用法、区别及应用场景，帮助开发者正确实现面向对象编程中的封装特性。
+head:
+  - - meta
+    - name: keywords
+      content: C++, 访问权限, public, private, protected, 封装, 面向对象, 继承
+---
+
 
 **面试高频指数：★★☆☆☆**
 

@@ -1,4 +1,12 @@
-# C++ 中 volatile 的作用
+---
+title: C/C++ 中 volatile 的作用
+shortTitle: C++ volatile
+description: 本文详细介绍了C++中volatile的作用，包括防止编译器优化、应用场景和示例等方面的分析。
+head:
+  - - meta
+    - name: keywords
+      content: C++, volatile, 关键字, 变量, 编译器优化
+---
 
 **面试高频指数：★★★☆☆**
 

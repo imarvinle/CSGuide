@@ -1,14 +1,7 @@
 ---
 title: Leetcode 21.合并两个有序链表
 description:   Leetcode 21.合并两个有序链表题解，双指针遍历解法
-meta:
-  - name: description
-    content:  Leetcode 21.合并两个有序链表题解，双指针遍历解法
-  - name: keywords
-    content: Leetcode 21.合并两个有序链表, Leetcode
 ---
-
-# 21.合并两个有序链表
 
 ## 题目
 

@@ -1,6 +1,12 @@
-# nullptr 和 NULL的区别
-
-**面试高频指数：★★★★☆**
+---
+title: C++ nullptr 和 NULL的区别
+shortTitle: nullptr 和 NULL的区别
+description: 本文详细介绍了C++11引入的nullptr关键字与NULL的区别，包括函数重载、模板编程中的应用场景，以及nullptr的安全性和优势。
+head:
+  - - meta
+    - name: keywords
+      content: C++, nullptr, NULL, 空指针, 函数重载, 模板编程
+---
 
 在 C++11 之前，我们通常使用 `NULL` 来表示空指针。
 

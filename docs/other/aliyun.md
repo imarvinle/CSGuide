@@ -1,4 +1,11 @@
-# 阿里云服务器限时优惠 99元/年
+---
+title: 阿里云服务器限时优惠 99元/年
+description: 阿里云服务器限时优惠 99元/年，活动期间，不管新老用户， 都可以在 [阿里云官方](https://www.aliyun.com/minisite/goods?userCode=oi6soy0t)购买用 99 元买 2c2g 阿里云服务一年，CS系统学习网站也是这个配置，对于个人来说完全够用的了。
+head:
+  - - meta
+    - name: keywords
+      content: 阿里云, 服务器, 优惠, 99元, 2c2g
+---
 
 大家好，我是小北。
 

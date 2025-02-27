@@ -1,4 +1,13 @@
-# 大学靠写 Lab 赚了10w
+---
+title: 计算机专业大学生赚钱方法、程序员外包、代写靠谱吗？
+shortTitle: 大学靠写 Lab 赚了10w
+description: 编程指北作者分享大学期间通过写 Lab 赚取10万元人民币的经历，包括外包经历、技术成长和收入情况，为计算机专业学生提供赚钱经验和职业规划建议。
+head:
+  - - meta
+    - name: keywords
+      content: 大学赚钱,Lab外包,技术赚钱,编程经验,职业规划,收入分享
+---
+
 
 > 原文发表于公众号: [我是如何纯靠技术在大学月入上万，收获人生第一个10W](https://mp.weixin.qq.com/s/Uyn64Ag2XMNpAL9YP2qmyA) 
 

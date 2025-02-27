@@ -1,6 +1,14 @@
-# sizeof 和 strlen
+---
+title: C/C++ sizeof 和 strlen 的区别
+shortTitle: C++ sizeof 和 strlen 区别
+description: 本文详细介绍了C++中sizeof和strlen的区别，包括计算方式、应用场景和示例等方面的分析。
+head:
+  - - meta
+    - name: keywords
+      content: C++, sizeof, strlen, 区别, 计算方式, 应用场景
+---
 
-## **面试高频指数：★★★★☆**
+**面试高频指数：★★★★☆**
 
 很多 C++ 的同学对于一些基本的 C 库函数没有掌握，面试的时候我遇到不少同学说 不清楚如何获得一个 char* 类型的字符串长度，这是一定不可以的。
 

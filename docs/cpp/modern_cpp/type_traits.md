@@ -1,4 +1,12 @@
-# C++ 类型萃取
+---
+title: C++ 类型萃取(type_traits)详解 
+shortTitle: C++ 类型萃取 type_traits
+description: 本文详细介绍了C++11引入的类型萃取(type_traits)技术，包括其原理、常用类型萃取函数及实际应用场景，帮助开发者在编译期获取和操作类型信息，提高代码的泛型性和性能。
+head:
+  - - meta
+    - name: keywords
+      content: C++, type_traits, 类型萃取, 模板元编程, 泛型编程, 编译期编程, C++11, SFINAE
+---
 
 **面试高频指数：★★☆☆☆**
 

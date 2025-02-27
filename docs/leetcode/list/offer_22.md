@@ -1,11 +1,10 @@
 ---
 title: 剑指 Offer 22. 链表中倒数第k个节点
 description: 剑指 Offer 22. 链表中倒数第k个节点，双指针法，递归解法
-meta:
-  - name: description
-    content:   剑指 Offer 22. 链表中倒数第k个节点，双指针法，递归解法
-  - name: keywords
-    content: 剑指 Offer, 链表中倒数第K个节点
+head:
+  - - meta
+    - name: keywords
+      content: 剑指 Offer, 链表中倒数第K个节点
 ---
 
 # 剑指 Offer 22. 链表中倒数第k个节点

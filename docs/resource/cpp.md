@@ -1,14 +1,13 @@
 ---
 title: C++必看经典书单(含下载方式)
 editLink: false
-meta:
-  - name: description
-    content:  C++必看经典书单(含下载方式)，计算机非常经典的书籍，黑皮书
-  - name: keywords
-    content: 计算机书籍、C++、PDF、C语言程序设计、C和指针、C++程序设计语言、黑皮书
+head:
+  - - meta
+    - name: keywords
+      content: 计算机书籍、C++、PDF、C语言程序设计、C和指针、C++程序设计语言、黑皮书
 ---
 
-# C++ 必看书单推荐 & C++ 经典书籍下载
+
 
 正如侯捷老师所说C++ 相关的书籍也非常多，如天上繁星。
 

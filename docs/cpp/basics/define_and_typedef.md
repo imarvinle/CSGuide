@@ -1,4 +1,12 @@
-# 宏定义 (define) 和 typedef 的区别
+---
+title: C++ 宏定义 (define) 和 typedef 的区别
+shortTitle: C++ define 和 typedef 区别
+description: 本文详细介绍了C++中宏定义（define）和typedef的区别，包括语法特点、实现机制、作用域限制等方面的对比分析。
+head:
+  - - meta
+    - name: keywords
+      content: C++, define, typedef, 宏定义, 类型别名, 编译阶段, 预处理器
+---
 
 **面试高频指数：★★☆☆☆**
 

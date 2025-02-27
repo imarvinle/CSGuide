@@ -1,4 +1,12 @@
-# C++ 几种类型转换
+---
+title: C++中四种强制类型转换：static_cast、dynamic_cast、const_cast和reinterpret_cast
+shortTitle: C++ 四种强制类型转换
+description: 本文详细介绍了C++中static_cast、dynamic_cast、const_cast和reinterpret_cast四种类型转换的用法，包括它们的区别和适用场景。
+head:
+  - - meta
+    - name: keywords
+      content: C++, 类型转换, static_cast, dynamic_cast, const_cast, reinterpret_cast
+---
 
 **面试高频指数：★★★☆☆**
 

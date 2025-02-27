@@ -1,14 +1,12 @@
 ---
-title: C++  书单/书籍推荐大全
+title: C++推荐书籍从入门到进阶
 description: 推荐C++领域经典的书籍，包括C++入门、进阶、提高等各个阶段的书，还包含C++电子书下载
-meta:
-  - name: description
-    content:  推荐C++领域经典的书籍，包括C++入门、进阶、提高等各个阶段的书，还包含C++电子书下载
-  - name: keywords
-    content: 计算机书籍, C++, C++，书单，书籍
+head:
+  - - meta
+    - name: keywords
+      content: 计算机书籍, C++, C++，书单，书籍
 ---
 
-# C++  书单/书籍推荐大全
 
 之前写了一篇《[如何系统学习C++？](https://mp.weixin.qq.com/s/WW_X12bTm94iaCgWBgYtJw)》，里面没有推荐太多书籍，所以这次单独搞了一个 C++ 书籍大全。
 

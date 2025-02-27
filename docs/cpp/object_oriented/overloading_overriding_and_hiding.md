@@ -1,4 +1,13 @@
-# 重载、重写、隐藏的区别
+---
+title: C++ 中重载、重写和隐藏的区别详解
+shortTitle: 重载、重写和隐藏
+description: 本文详细介绍了C++中的重载(Overloading)、重写(Overriding)和隐藏(Hiding)三个概念的区别，包括它们的定义、使用条件以及在面向对象编程中的应用场景。
+head:
+  - - meta
+    - name: keywords
+      content: C++, 重载, 重写, 隐藏, Overloading, Overriding, Hiding, 面向对象, 多态
+---
+
 
 **面试高频指数：★★★☆☆**
 

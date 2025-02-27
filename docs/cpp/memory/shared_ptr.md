@@ -1,4 +1,12 @@
-# 深入理解 C++ shared_ptr之手写
+---
+title: 深入理解 C++ shared_ptr 原理和实现
+shortTitle: 动手写 C++ shared_ptr
+description: 本文详细介绍了C++中shared_ptr的原理和实现，包括引用计数、内存管理、线程安全等方面的分析。
+head:
+  - - meta
+    - name: keywords
+      content: C++, shared_ptr, 智能指针, 内存管理, 引用计数
+---
 
 **面试高频指数：★★★★☆**
 

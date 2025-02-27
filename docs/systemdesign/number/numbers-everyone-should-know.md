@@ -1,4 +1,11 @@
-# 每个程序员都应该知道的数字
+---
+title: 每个程序员都应该知道的数字
+description: 每个程序员都应该知道的数字，包括写操作成本、读取成本、延迟数据等，帮助理解系统设计的基本成本，优化程序性能。
+head:
+  - - meta
+    - name: keywords
+      content: 程序员、数字、系统设计、性能优化
+---
 
 这组数据同样来自演进: Building Scalable Web Applications with Google App Engine，
 

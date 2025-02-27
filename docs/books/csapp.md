@@ -1,14 +1,13 @@
 ---
-title: 如何阅读《深入理解计算机系统》
+title: 如何阅读《深入理解计算机系统》CSAPP 这本书？
+shortTitle: 如何阅读《深入理解计算机系统》
 description:  如何阅读深入理解计算机系统（CSAPP），为什么要读CSAPP，CSAPP的看书方法，深入理解计算机系统相关资源推荐
-meta:
-  - name: description
-    content:  如何阅读深入理解计算机系统（CSAPP），为什么要读CSAPP，CSAPP的看书方法，深入理解计算机系统相关资源推荐
-  - name: keywords
-    content: 深入理解计算机系统, 下载, 阅读方法, CSAPP
+head:
+  - - meta
+    - name: keywords
+      content: 深入理解计算机系统, 下载, 阅读方法, CSAPP
 ---
 
-# 如何阅读《深入理解计算机系统》
 
 **《深入理解计算机系统》这本书被誉为计算机届的神书，豆瓣评分也是接近10分，个人感觉不至于神书，但是确实是一本适合程序员初步了解 System 知识的好书。**
 

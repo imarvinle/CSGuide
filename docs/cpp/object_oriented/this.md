@@ -1,4 +1,12 @@
-# this 指针
+---
+title: C++ this 指针详解
+shortTitle: C++ this 指针
+description: 本文详细介绍了C++中this指针的原理、用法以及在面向对象编程中的应用场景。
+head:
+  - - meta
+    - name: keywords
+      content: C++, this指针, 面向对象编程, 成员函数, 成员变量
+---
 
 **面试高频指数：★★★★☆**
 

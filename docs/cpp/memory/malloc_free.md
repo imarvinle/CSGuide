@@ -1,4 +1,12 @@
-# C/C++ malloc-free底层原理-动态内存管理
+---
+title: C/C++ malloc-free 内存分配原理
+shortTitle: C++ malloc-free底层原理
+description: 本文详细介绍了C++中malloc和free的底层原理，包括虚拟内存机制、动态内存管理、内存分配方式、内存回收等方面的分析。
+head:
+  - - meta
+    - name: keywords
+      content: C++, malloc, free, 动态内存管理, 虚拟内存, 内存分配, 内存回收
+---
 
 **面试高频指数：★★★★★**
 

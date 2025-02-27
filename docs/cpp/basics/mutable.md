@@ -1,6 +1,14 @@
-# mutable 的作用
+---
+title: C++ mutable 的作用
+shortTitle: C++ mutable
+description: 本文详细介绍了C++中mutable的作用，包括在const成员函数中修改成员变量、应用场景和示例等方面的分析。
+head:
+  - - meta
+    - name: keywords
+      content: C++, mutable, 关键字, 成员变量, const成员函数
+---
 
-面试高频指数：★★★☆☆
+**面试高频指数：★★★☆☆**
 
 `mutable`是C++中的一个关键字，用于修饰类的成员变量，表示该成员变量即使在一个`const`成员函数中也可以被修改。
 

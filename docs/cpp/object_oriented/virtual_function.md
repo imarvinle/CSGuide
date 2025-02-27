@@ -1,6 +1,12 @@
-#  C++ 虚函数表
-
-**面试高频指数：★★★★☆**
+---
+title: C++ 虚函数表详解
+shortTitle: C++ 虚函数表
+description: 本文详细介绍了C++中虚函数表的原理、内存结构布局以及在面向对象编程中的应用场景。
+head:
+  - - meta
+    - name: keywords
+      content: C++, 虚函数表, 虚函数, 面向对象编程, 内存模型
+---
 
 虚函数表在 C++ 面试中出现频率非常高，常常以各种形式的问题出现，比如：
 
@@ -19,7 +25,7 @@
 这样，这个类的实例内存中都有一个虚函数表的指针，所以，当我们用父类的指针来操作一个子类的时候，这张虚函数表就显得由为重要了，它就像一个地图一样，指明了实际所应该调用的函数。
 
 ```cpp
-class roint (
+class Point {
 public:
 	Point(float xval ); 
 	virtoal ~Point();
@@ -30,7 +36,6 @@ protected:
 	float _x;
 	static int _point_count;
 };
-
 ```
 比如上面这个类，它的对象模型如下：
 ![](https://cdn.how2cs.cn/csguide/113608.png)

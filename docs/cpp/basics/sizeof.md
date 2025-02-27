@@ -1,7 +1,14 @@
-# C++ 中 sizeof 关键字
+---
+title: C/C++ 中 sizeof 关键字
+shortTitle: C++ sizeof
+description: 本文详细介绍了C++中sizeof关键字的用法，包括计算类型/对象所占内存大小的方法、小技巧和示例等方面的分析。
+head:
+  - - meta
+    - name: keywords
+      content: C++, sizeof, 关键字, 内存大小, 计算
+---
 
 **面试高频指数：★★★★☆**
-
 
 sizeof 是 C 语言中的运算符，用来计算一个类型/对象的所占用的内存大小，有些 C/C++ 面试官会出一些 sizeof(xxx) 的大小是多少的问题。
 

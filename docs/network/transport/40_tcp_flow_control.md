@@ -1,13 +1,11 @@
 ---
 title: TCP 流量控制：滑动窗口、流量控制、拥塞控制 （下）
-meta:
-  - name: description
-    content: 详细介绍TCP流量控制的过程，包括滑动窗口、流量控制和拥塞控制的过程、状态变化和关键字段。帮助读者理解TCP流量控制的原理和实现。
-  - name: keywords
-    content: TCP, 流量控制, 滑动窗口, 拥塞控制
+head:
+  - - meta
+    - name: keywords
+      content: TCP, 流量控制, 滑动窗口, 拥塞控制
 ---
 
-# 三、TCP 流量控制 （flow control）
 
 ### 3.1 为什么需要流量控制？
 

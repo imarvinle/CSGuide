@@ -1,4 +1,13 @@
-# C++ 宏定义（define）和内联函数（inline）的区别
+---
+title: C++ 宏定义（define）和内联函数（inline）的区别与使用场景
+shortTitle: C++ define 和 inline 区别
+description: 本文详细介绍了C++中宏定义（define）和内联函数（inline）的区别，包括语法特点、执行时机、类型安全性、调试难度和使用场景等方面的对比分析。
+head:
+  - - meta
+    - name: keywords
+      content: C++, define, inline, 宏定义, 内联函数, 预处理, 函数调用开销
+---
+
 
 **面试高频指数：★★★☆☆**
 

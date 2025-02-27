@@ -1,13 +1,11 @@
 ---
-title: 程序员校招社招简历模板下载
-meta:
-  - name: description
-    content:  程序员简约的简历模板，可下载
-  - name: keywords
-    content: 互联网、程序员、技术岗、简历、简历模板
+title: 程序员校招社招简历模板下载 ｜ 适合计算机、软件等专业
+description: 程序员简约的简历模板，可下载
+head:
+  - - meta
+    - name: keywords
+      content: 互联网、程序员、技术岗、简历、简历模板
 ---
-
-# 程序员校招社招简历模板下载 ｜ 适合计算机、软件等专业
 
 这里给大家分享几套适合程序员/互联网的简历模板:
 
