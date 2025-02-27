@@ -1,14 +1,12 @@
 ---
 title: UDP协议详解：最简单的传输层协议
-meta:
-  - name: description
-    content: 详细介绍UDP协议的工作原理、特点和应用场景。帮助读者理解UDP在网络通信中的定位以及何时选择UDP作为传输协议。
-  - name: keywords
-    content: UDP, 用户数据报协议, 无连接协议, 传输层协议, 网络编程, Socket编程, 不可靠传输, 数据报文
+shortTitle: UDP协议详解
+description: 详细介绍UDP协议的工作原理、特点和应用场景。帮助读者理解UDP在网络通信中的定位以及何时选择UDP作为传输协议。
+head:
+  - - meta  
+    - name: keywords
+      content: UDP, 用户数据报协议, 无连接协议, 传输层协议, 网络编程, Socket编程, 不可靠传输, 数据报文
 ---
-
-
-# UDP协议详解：最简单的传输层协议
 
 
 ## 一、UDP协议概述

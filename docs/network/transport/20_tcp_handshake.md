@@ -1,13 +1,13 @@
 ---
-title: TCP连接管理：三次握手和四次挥手
-meta:
-  - name: description
-    content: 详细介绍TCP连接管理的过程，包括三次握手和四次挥手的过程、状态变化和关键字段。帮助读者理解TCP连接的建立和释放过程。
-  - name: keywords
-    content: TCP, 三次握手, 连接建立, 可靠传输, 状态变化, 关键字段
+title: TCP 三次握手和四次挥手详解
+shortTitle: TCP 三次握手和四次挥手
+description: 详细介绍TCP连接管理的过程，包括三次握手和四次挥手的过程、状态变化和关键字段。帮助读者理解TCP连接的建立和释放过程。
+head:
+  - - meta
+    - name: keywords
+      content: TCP, 三次握手, 连接建立, 可靠传输, 状态变化, 关键字段
 ---
 
-# 一、TCP连接管理：三次握手和四次挥手
 
 大家好，我是小北。
 

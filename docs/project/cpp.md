@@ -1,4 +1,11 @@
-# C++ 后台方向项目推荐（持续更新）
+---
+title: C++ 后台方向项目推荐（持续更新）
+description: 推荐适合 C++ 后台方向的优秀项目，包括 WebServer、网络库、RPC 框架等，帮助提升编程能力和项目经验。
+head:
+  - - meta
+    - name: keywords
+      content: C++, 后台, 项目推荐, WebServer, 网络库, RPC 框架
+---
 
 发现现在很多 C++ 后台方向的同学简历高度同质化，基本上 50% 以上的同学都有一个项目：**WebServer**
 

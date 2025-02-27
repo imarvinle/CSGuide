@@ -1,4 +1,16 @@
-# 网站更新日记
+---
+title: 网站更新日记
+description: 记录网站更新日志，包括新增功能、优化和改进等。
+head:
+  - - meta
+    - name: keywords
+      content: 网站更新日记, 新增功能, 优化, 改进
+---
+
+## 2025年2月
+
+* 网站更换主题 [vupress-theme-hope](https://theme-hope.vuejs.press/zh/)
+* 新增 [网络指北](/network/) 系列文章
 
 
 ## 2023年5月

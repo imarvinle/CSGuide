@@ -1,14 +1,15 @@
 ---
 title: TCP/IP 网络模型（网络协议栈）
-meta:
-  - name: description
-    content: 深入介绍TCP/IP网络协议栈的分层架构、工作原理和各层协议，帮助读者理解网络通信的底层机制和协议设计思想。
-  - name: keywords
-    content: TCP/IP协议栈, 网络分层, 网络协议, HTTP, TCP, IP, 数据链路层, 网络层, 传输层, 应用层
+shortTitle: TCP/IP 网络模型分层
+description: 深入介绍TCP/IP网络协议栈的分层架构、工作原理和各层协议，帮助读者理解网络通信的底层机制和协议设计思想。
+head:
+  - - meta
+    - name: keywords
+      content: TCP/IP协议栈, 网络分层, 网络协议, HTTP, TCP, IP, 数据链路层, 网络层, 传输层, 应用层
 ---
 
 
-# TCP/IP 网络模型（网络协议栈）
+## TCP/IP 网络模型（网络协议栈）
 
 大家好，我是小北。
 

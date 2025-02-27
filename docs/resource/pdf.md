@@ -1,14 +1,12 @@
 ---
 editLink: false
 title: 计算机必看经典书单(含下载方式)
-meta:
-  - name: description
-    content:  计算机必看经典书单(含下载方式)，计算机非常经典的书籍，黑皮书
-  - name: keywords
-    content: 计算机书籍、PDF、C语言程序设计、C和指针、C++程序设计语言、黑皮书
+head:
+  - - meta
+    - name: keywords
+      content: 计算机书籍、PDF、C语言程序设计、C和指针、C++程序设计语言、黑皮书
 ---
 
-# 计算机必看经典书单(含下载方式)
 
 **读大学期间，我买了很多书，也看了很多技术书，后来发现书不在于多，而在于经典。**
 

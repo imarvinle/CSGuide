@@ -1,4 +1,12 @@
-# 系统设计开篇
+
+---
+title: 系统设计开篇
+description: 系统设计开篇，介绍系统设计的基本概念和重要性，帮助理解系统设计的基本概念和重要性。
+head:
+  - - meta
+    - name: keywords
+      content: 系统设计、系统设计开篇、系统设计的重要性
+---
 
 在[这篇文章](https://mp.weixin.qq.com/s/uMWnlJ9UIlo2E1gN3X6Bfw)中，我说要更新一个「Interview-oriented system design」系列。
 

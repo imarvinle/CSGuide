@@ -1,14 +1,13 @@
 ---
-title: TCP协议概述：可靠的传输层协议
-meta:
-  - name: description
-    content: 详细介绍TCP协议的工作原理、特点和应用场景。帮助读者理解TCP的三大核心特性：可靠传输、流量控制和拥塞控制，以及TCP在网络通信中的重要作用。
-  - name: keywords
-    content: TCP, 传输控制协议, 可靠传输, 流量控制, 拥塞控制, 网络编程, Socket编程, 面向连接
+title: TCP协议：可靠的传输层协议
+shortTitle: TCP协议概述
+description: 详细介绍TCP协议的工作原理、特点和应用场景。帮助读者理解TCP的三大核心特性：可靠传输、流量控制和拥塞控制，以及TCP在网络通信中的重要作用。
+head:
+  - - meta
+    - name: keywords
+      content: TCP, 传输控制协议, 可靠传输, 流量控制, 拥塞控制, 网络编程, Socket编程, 面向连接
 ---
 
-
-# 一、TCP 协议概述：可靠的传输层协议
 
 大家好，我是小北。
 

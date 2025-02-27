@@ -1,13 +1,13 @@
 ---
 title: 传输层协议概述：TCP和UDP
-meta:
-  - name: description
-    content: 详细介绍传输层的两大核心协议TCP和UDP，包括它们的工作原理、特点和应用场景。帮助读者理解传输层在网络通信中的重要作用以及如何选择合适的传输协议。
-  - name: keywords
-    content: TCP, UDP, 传输层协议, 网络编程, Socket编程, 可靠传输, 数据报文, 网络通信
+description: 详细介绍传输层的两大核心协议TCP和UDP，包括它们的工作原理、特点和应用场景。帮助读者理解传输层在网络通信中的重要作用以及如何选择合适的传输协议。
+head:
+  - - meta
+    - name: keywords
+      content: TCP, UDP, 传输层协议, 网络编程, Socket编程, 可靠传输, 数据报文, 网络通信
 ---
 
-# 一、传输层协议概述（TCP/UDP）
+## 一、传输层协议概述（TCP/UDP）
 
 对于应用开发的程序员来说，最常用的就是传输层的协议（就是 Socket 网络编程 ）。
 
