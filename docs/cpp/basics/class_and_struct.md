@@ -1,4 +1,12 @@
-#  C++ 中 class 和 struct 区别
+---
+title: C++中类（class）和结构（struct）的区别
+shortTitle: C++ class 和 struct 区别
+description: 本文详细介绍了 C++ 中 class 和 struct 的区别，包括成员默认访问权限、继承默认访问权限、模板参数使用等方面的差异。
+head:
+  - - meta
+    - name: keywords
+      content: C++, class, struct, 区别, 访问权限, 继承, 模板参数
+---
 
 **面试高频指数：★★★☆☆**
 

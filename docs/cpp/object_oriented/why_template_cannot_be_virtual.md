@@ -1,4 +1,13 @@
-# 为什么C++的成员模板函数不能是 virtual 的
+---
+title: 为什么C++的成员模板函数不能是virtual的？
+shortTitle: C++模板函数不能是virtual
+description: 本文详细介绍了为什么C++中成员模板函数不能声明为虚函数，包括编译机制和虚函数表实现的技术原因。
+head:
+  - - meta
+    - name: keywords
+      content: C++, 模板函数, 虚函数, 成员模板, 编译机制
+---
+
 
 **面试高频指数：★★☆☆☆**
 

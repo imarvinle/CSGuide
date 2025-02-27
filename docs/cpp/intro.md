@@ -1,5 +1,6 @@
 ---
-title: C++ 面试指北介绍：C/C++ 面试题
+title: 超全 C/C++ 技术面试八股文面试题！（2025 年更新）
+shortTitle: C++ 面试指北介绍 & 目录
 description: 本文详细介绍了C++面试的重点知识和学习资源，包括内存管理、面向对象编程、基础语言特性、C++11等，涵盖了从基础到高级的所有主题。
 head:
   - - meta
@@ -7,11 +8,12 @@ head:
       content: C++, 面试, 内存管理, 指针, 智能指针, 虚函数, C++11, 面向对象编程, 类和对象, RAII, 多态, 内存分区, 基础语言特性
 ---
 
-# C++ 面试指北介绍：C/C++ 面试题
 
 对于 C++ 语法重点内容进行讲解，包括内存、指针、智能指针、虚函数、C++11、面向对象等等，共计 10w+ 字。
 
 面试重点及复习指南看这里: [C/C++后台开发面试重点知识](/cpp/)
+
+## C++ 基础篇
 
 - **C++ 基础篇** 👇
 ::: details 点击展开
@@ -34,6 +36,8 @@ head:
 :::
 
 
+## C++ 面向对象篇
+
 - **C++面向对象篇** 👇
 ::: details 点击展开
   - [面向对象三大特性](/cpp/object_oriented/features_object-oriented.html)
@@ -52,6 +56,7 @@ head:
   - [sizeof 一个空类大小是多大](/cpp/object_oriented/size_of_an_empty_class.html)
 :::
 
+## C++内存管理篇
 - **C++内存管理篇** 👇
 ::: details 点击展开
   - [C/C++ 内存是什么？](/cpp/memory/what_is_memory.html)
@@ -70,6 +75,8 @@ head:
   - [C/C++ 野指针和空悬指针](/cpp/memory/dangling_pointers.html)
   - [常见的 C/C++ 内存错误](/cpp/memory/memory_errors.html)
 :::
+
+## 现代 C++
 
 - **C++11** 👇
 ::: details 点击展开

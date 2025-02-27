@@ -1,7 +1,16 @@
-# 前言
+---
+title: 计算机必读书单推荐
+shortTitle: 前言
+description: 推荐计算机领域的经典书籍，涵盖C语言、C++、Java、操作系统、系统编程、分布式、代码设计等方面，帮助你提升编程技能，成为计算机行业的专业人士。
+head:
+  - - meta
+    - name: keywords
+      content: 计算机书籍, C语言, C++, Java
+---
+
+
 
 > 高效看书方法: [如何高效阅读计算机类书籍？](/roadmap/method/how_to_read_books.html)
-
 
 大家好，我是小北。
 

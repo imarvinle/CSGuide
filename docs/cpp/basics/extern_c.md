@@ -1,8 +1,14 @@
-# extern C 的作用
+---
+title: C++ extern C 的作用
+shortTitle: C++ extern C
+description: 本文详细介绍了C++中extern C的作用，包括函数命名规则、链接规则和语法格式等方面的分析。
+head:
+  - - meta
+    - name: keywords
+      content: C++, extern C, 函数命名规则, 链接规则, 语法格式
+---
 
 **面试高频指数：★★★★☆**
-
-正如这篇文章[extern 的作用](https://csguide.cn/cpp/basics/extern.html)所说， extern 是指示链接可见性和符号规则，而 `extern "C"` 则是 C++ 语言提供的一种机制，用于在 C++ 代码中调用 C 语言编写的函数和变量。
 
 如果不用 extern C，由于 C++ 和 C 语言在编译和链接时使用的命名规则不同，这会导致 C++ 代码无法调用 C 语言编写的函数或变量（链接时找不到符号）。
 

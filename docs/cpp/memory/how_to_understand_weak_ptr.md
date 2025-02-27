@@ -1,6 +1,12 @@
-# 深入理解 C++ weak_ptr
-
-**面试高频指数：★★☆☆☆**
+---
+title: 【C++11 新特性】深入理解 C++ weak_ptr
+shortTitle: C++ weak_ptr
+description: 本文详细介绍了C++中weak_ptr的用法，包括解决循环引用问题、观察std::shared_ptr对象而不影响引用计数，以及在需要时提供对底层资源的访问。
+head:
+  - - meta
+    - name: keywords
+      content: C++, weak_ptr, 智能指针, 循环引用, 资源管理
+---
 
 ## weak_ptr 是什么？
 

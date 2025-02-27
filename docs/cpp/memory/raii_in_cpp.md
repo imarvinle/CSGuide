@@ -1,6 +1,12 @@
-# C++ RAII 思想
-
-**面试高频指数：★★★★☆**
+---
+title: C++ RAII 思想机制详解
+shortTitle: C++ RAII
+description: 本文详细介绍了C++中RAII（Resource Acquisition Is Initialization）的原理和应用，包括资源获取即初始化、资源管理、异常安全和内存安全等方面的分析。
+head:
+  - - meta
+    - name: keywords
+      content: C++, RAII, 资源管理, 异常安全, 内存安全
+---
 
 ## 什么是 RAII
 

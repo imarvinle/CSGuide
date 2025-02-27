@@ -1,4 +1,13 @@
-#  C++ 中 extern 作用
+---
+title: C++ 中 extern 作用
+shortTitle: C++ extern
+description: 本文详细介绍了C++中extern的作用，包括符号的声明与定义、链接属性、编译和链接过程等方面的分析。
+head:
+  - - meta
+    - name: keywords
+      content: C++, extern, 符号, 链接, 编译, 链接器
+---
+
 **面试高频指数：★★★★☆**
 
 一般而言，C++全局变量的作用范围仅限于当前的文件，但同时C++也支持分离式编译，允许将程序分割为若干个文件被独立编译。

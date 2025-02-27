@@ -1,6 +1,13 @@
-# C++ 中 explicit 的作用
+---
+title: C++ 中 explicit 的作用
+shortTitle: C++ explicit 关键字
+description: 本文详细介绍了C++中explicit关键字的用法，包括防止隐式转换、显式转换和使用场景等方面的分析。
+head:
+  - - meta
+    - name: keywords
+      content: C++, explicit, 关键字, 隐式转换, 显式转换
+---
 **面试高频指数：★★★☆☆**
-
 在 C++ 中，`explicit` 通常用于构造函数的声明中，用于防止隐式转换。
 当将一个参数传递给构造函数时，如果构造函数声明中使用了 `explicit` 关键字，则只能使用显式转换进行转换，而不能进行隐式转换。
 

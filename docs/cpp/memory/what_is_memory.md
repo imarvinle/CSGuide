@@ -1,4 +1,12 @@
-# C/C++ 内存是什么？
+---
+title: C/C++ 内存本质是什么？
+shortTitle: 内存本质是什么？
+description: 本文详细介绍了C/C++中内存的本质、内存模型、内存管理、内存泄漏等方面的分析。
+head:
+  - - meta
+    - name: keywords
+      content: C/C++, 内存, 内存管理, 内存泄漏
+---
 
 **面试高频指数：★★★★☆**
 

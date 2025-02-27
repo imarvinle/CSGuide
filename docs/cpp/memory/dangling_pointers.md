@@ -1,6 +1,12 @@
-# C/C++ 野指针和空悬指针
-
-**面试高频指数：★★★☆☆**
+---
+title: C/C++ 野指针和空悬指针(Dangling pointer and wild pointer)
+shortTitle: C/C++ 野指针和空悬指针
+description: 本文详细介绍了C/C++中野指针和空悬指针的概念、成因和表现，包括野指针和空悬指针的区别和使用场景。
+head:
+  - - meta
+    - name: keywords
+      content: C/C++, 野指针, 空悬指针, 内存管理
+---
 
 野指针（Wild Pointer）和空悬指针（Dangling Pointer）都是指向无效内存的指针，但它们的成因和表现有所不同，区别如下：
 

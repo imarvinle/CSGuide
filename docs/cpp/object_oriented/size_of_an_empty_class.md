@@ -1,9 +1,16 @@
-# sizeof 一个空类大小是多大
+---
+title: C++中 sizeof 一个空类大小是多大
+shortTitle: sizeof 一个空类大小
+description: 本文详细介绍了C++中sizeof一个空类大小的计算方法，包括C++标准要求每个对象都必须具有独一无二的内存地址，以及编译器为空类分配1字节内存的原因。
+head:
+  - - meta
+    - name: keywords
+      content: C++, sizeof, 空类, 内存地址, 对象大小
+---
 
 **面试高频指数：★★☆☆☆**
 
 也就是下面这个输出多少:
-
 ```cpp
 class Empty {};
 

@@ -1,9 +1,16 @@
-# C++ 中 static 关键字
+---
+title: C/C++ 中 static 关键字
+shortTitle: C++ static
+description: 本文详细介绍了C++中static关键字的用法，包括修饰全局变量、局部变量、函数和类成员变量等方面的分析。
+head:
+  - - meta
+    - name: keywords
+      content: C++, static, 关键字, 全局变量, 局部变量, 函数, 类成员变量
+---
 
 **面试高频指数：★★★★★**
 
 在 C/C++ 中，static 是一个非常重要的关键字，它可以用于变量、函数和类中。
-
 下面分别举例说明下：
 
 ## 1. static 修饰全局变量

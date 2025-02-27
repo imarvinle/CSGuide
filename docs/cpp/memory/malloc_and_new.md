@@ -1,6 +1,12 @@
-# C++ malloc、new，free、delete 区别
-
-**面试高频指数：★★★★☆**
+---
+title: C++ malloc、new，free、delete 有什么区别？
+shortTitle: C++ malloc、new，free、delete 区别
+description: 本文详细介绍了C++中malloc、new、free、delete的区别，包括内存分配方式、内存管理方式、内存释放方式等方面的分析。
+head:
+  - - meta
+    - name: keywords
+      content: C++, malloc, new, free, delete, 内存管理
+---
 
 malloc、new、free、delete 这几个总是放在一起来对比，今天来彻底的解析一下这几个函数/操作符:
 

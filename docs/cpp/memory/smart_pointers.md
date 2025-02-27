@@ -1,4 +1,12 @@
-# C++ 智能指针解析
+---
+title: C++ 智能指针解析
+shortTitle: C++ 智能指针
+description: 本文详细介绍了C++中智能指针的原理和实现，包括unique_ptr和shared_ptr的用法和区别，以及智能指针的实现原理和手写示例。
+head:
+  - - meta
+    - name: keywords
+      content: C++, 智能指针, 内存管理, 指针, 内存泄漏
+---
 
 **面试高频指数：★★★★☆**
 
