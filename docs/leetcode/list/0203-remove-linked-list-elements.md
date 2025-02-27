@@ -1,14 +1,12 @@
 ---
 title: Leetcode 203.移除链表元素
 description:  Leetcode第203题，移除链表元素解题思路和题解，双指针法以及虚拟头结点
-meta:
-  - name: description
-    content:   Leetcode第203题，移除链表元素解题思路和题解，双指针法以及虚拟头结点
-  - name: keywords
-    content: 203.移除链表元素、Leetcode、剑指offer
+head:
+  - - meta
+    - name: keywords
+      content: 移除链表元素、Leetcode、剑指offer
 ---
 
-# 203.移除链表元素
 
 ## 题目
 
