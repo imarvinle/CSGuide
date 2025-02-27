@@ -2,7 +2,7 @@
   "name": "csguide-hope",
   "description": "编程指北",
   "version": "1.0.0",
-  "license": "MIT",
+  "license": "CC BY-NC-ND 4.0",
   "type": "module",
   "scripts": {
     "docs:build": "vuepress-vite build docs",
