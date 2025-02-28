@@ -19,7 +19,7 @@ head:
 
 下面介绍一些常见的规则：
 
-- **Microsoft Visual C++ 编译器（Windows）**：函数的名称会被编译器修改为一个以 "_" 开头的名称，并加上参数类型和返回值类型等信息，以避免链接冲突。例如，函数 `int add(int a, int b)` 的链接名可能是 `_add_int_int`。
+- **Microsoft Visual C++ 编译器（Windows）**：函数的名称会被编译器修改为一个以 "?" 开头的名称，并加上参数类型和返回值类型等信息，以避免链接冲突。例如，函数 `int add(int a, int b)` 的链接名可能是 `?add@@YAHHH@Z`。
 - **GCC 编译器（Linux）**：也会加上参数类型和返回值类型等信息。例如，函数 `int add(int a, int b)` 的链接名可能是 `_Z3addii`。
 - **Clang 编译器（MacOS）**：函数的链接名的生成规则与 GCC 编译器类似，但稍有不同。例如，函数 `int add(int a, int b)` 的链接名可能是 `_Z3addii`。
 
@@ -67,6 +67,8 @@ int main() {
 ```
 
 在上面的代码中，使用 `extern "C"` 声明了 C 语言编写的 `print_message` 函数，使得它可以在 C++ 代码中被调用。
+
+如果不使用 `extern "C"` 进行声明，将会导致链接错误 `error LNK2019: 无法解析的外部符号 "void __cdecl print_message(char const *)" (?print_message@@YAXPEBD@Z)，函数 main 中引用了该符号`。
 
 在 `main` 函数中，使用 C 语言的语法和命名规则来调用 `print_message` 函数，输出 "Hello, world!"。
 
