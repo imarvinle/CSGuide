@@ -21,7 +21,6 @@ head:
 
 CSAPP 全称 Computer Systems A Programmer's perspective，出版社翻译的中文书名是《深入理解计算机系统》，感觉中英文完全不搭边。
 
-这本书可能叫做“程序员需要了解的计算机知识”更为恰当一点。
 
 需要看书的同学可以看下这个：[深入理解计算机系统高清版PDF](https://csguide.cn/resource/csapp.html)
 
