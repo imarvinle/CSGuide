@@ -13,9 +13,14 @@
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.19",
     "@vuepress/plugin-copyright": "2.0.0-rc.7",
+    "markmap-lib": "^0.18.11",
+    "markmap-toolbar": "^0.18.10",
+    "markmap-view": "^0.18.10",
+    "mermaid": "^11.4.1",
     "sass-embedded": "^1.85.0",
     "vue": "^3.5.13",
     "vuepress": "2.0.0-rc.19",
+    "vuepress-plugin-md-enhance": "2.0.0-rc.72",
     "vuepress-plugin-readmore-popular-next": "2.0.0-rc.18.1",
     "vuepress-theme-hope": "2.0.0-rc.68"
   },
