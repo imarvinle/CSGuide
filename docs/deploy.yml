@@ -1,0 +1,74 @@
+name: 自动部署到服务器
+
+on:
+  push:
+    branches:
+      - main  # 监听 main 分支的推送和合并事件 
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 检出主仓库（VuePress 项目）
+      - name: Checkout main repository
+        uses: actions/checkout@v3
+        with:
+          path: csguide-hope  # 将vuepress 配置 主仓库检出到 csguide-hope 目录
+      
+      # 检出内容仓库（CSGuide）
+      - name: Checkout content repository
+        uses: actions/checkout@v3
+        with:
+          repository: imarvinle/CSGuide # 指定内容仓库
+          path: CSGuide  # 将内容仓库检出到 CSGuide 目录
+      
+      # 复制内容到主仓库 CSGuide 的适当位置
+      - name: Copy content to main repository
+        run: |
+          cp -r csguide-hope/* CSGuide/docs/
+      
+      # 进入主仓库目录
+      - name: Change to main repository directory
+        run: cd CSGuide
+      
+      # 设置 Node.js 和 pnpm
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: false
+      
+      # 安装依赖和构建
+      - name: Install dependencies
+        run: |
+          cd CSGuide
+          pnpm install
+      
+      - name: Build VuePress site
+        run: |
+          cd CSGuide
+          ls -al 
+          ls -al docs
+          pnpm run docs:build
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+      
+      # 部署
+      - name: Deploy to server
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          port: ${{ secrets.SERVER_PORT }}
+          source: "CSGuide/docs/.vuepress/dist/"
+          target: "/root/testcsguide"
+          strip_components: 4  # strip_components: 4 表示在复制文件时忽略源路径的前4层目录结构
+                               # 即从 CSGuide/docs/.vuepress/dist/ 复制到目标时，
+                               # 会去掉 CSGuide、docs、.vuepress、dist 这4层目录，只复制 dist 目录下的内容
