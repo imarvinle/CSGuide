@@ -11,6 +11,7 @@ docs/README.md
 docs/navigation.md
 docs/portfolio.md
 docs/deploy.sh
+docs/.github
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
