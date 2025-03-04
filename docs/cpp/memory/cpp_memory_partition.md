@@ -14,7 +14,7 @@ head:
 
 在 CSAPP 第九章虚拟内存，就将内存分为堆、bss、data、txt、栈等区域。
 
-![](https://cdn.how2cs.cn/csguide/060037.png)
+![内存分区](https://cdn.how2cs.cn/csguide/060037.png)
 
 ## 代码区（Code Segment）
 
