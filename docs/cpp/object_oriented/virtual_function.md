@@ -28,7 +28,7 @@ head:
 class Point {
 public:
 	Point(float xval ); 
-	virtoal ~Point();
+	virtual ~Point();
 	float x() const,
 	static int PointCount();
 protected:
