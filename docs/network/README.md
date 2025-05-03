@@ -64,25 +64,34 @@ head:
 
 ### 一、网络基础概念
 
+* [什么是计算机网络？](https://csguide.cn/network/overview/10_what_is_network.html)
+* [网络是如何连接的？](https://csguide.cn/network/overview/30_how_networks_connect.html)
+
 #### 1. 网络分层模型
-  ○ 5分钟搞懂OSI七层模型（对比TCP/IP四层模型）
-  ○ 分层思想的工程哲学：为什么需要分层？
-  ○ 面试高频：各层典型协议和设备对应表
-#### 2. 网络通信基础
-  ○ 数据单元：报文/帧/包的区别
-  ○ 地址体系：MAC地址 vs IP地址 vs 端口号
-  ○ 关键概念：带宽/吞吐量/时延的简明解释
+  ○ [TCP/IP分层模型](https://csguide.cn/network/overview/20_protocol.html)
+
+  ○ [分层思想的工程哲学：为什么需要分层？](https://csguide.cn/network/overview/21-why-layered.html)
+
+  ○ [各层典型协议和设备对应表](https://csguide.cn/network/overview/23-network-layers.html)
+#### 2. 网络协议基础
+  ○ [报文/帧/包的区别](https://csguide.cn/network/overview/40-data-package.html)
+
+  ○ [MAC 地址和 IP 地址](https://csguide.cn/network/overview/45-ip-mac-port.html)
+
+  ○ [带宽、吞吐量、时延](https://csguide.cn/network/overview/48-bandwidth-throughput-latency.html)
 
 
-### 二、核心协议：传输层
+### 二、传输层
 
-  ○ TCP协议：
-  ○ 三次握手（附Wireshark抓包分析）
-  ○ 四次挥手与TIME_WAIT状态
-  ○ 滑动窗口/流量控制/拥塞控制（图解+面试题变体）
-  ○ UDP协议：
-  ○ 适用场景与头部结构解析
-  ○ QUIC协议快速入门（加分项）
+  ○ [传输层基础概念：TCP & UDP](https://csguide.cn/network/transport/0_overview.html)
+
+  ○ [UDP 详解](https://csguide.cn/network/transport/5_udp.html)
+
+  ○ [TCP 协议概述](https://csguide.cn/network/transport/10_tcp_overview.html)
+
+  ○ [TCP重传机制：滑动窗口、流量控制、拥塞控制 （上）](https://csguide.cn/network/transport/30_tcp_sliding_window.html)
+
+  ○ [TCP 流量控制：滑动窗口、流量控制、拥塞控制 （下）](https://csguide.cn/network/transport/40_tcp_flow_control.html)
 
 ### 三、核心协议：IP 层
   ○ IP协议与路由选择
@@ -123,7 +132,7 @@ head:
 
   ○ 中间人攻击演示（ARP欺骗实验）
 
-  ○ 数字证书验证流程解析
+  ○ [数字证书 & 数字签名](https://csguide.cn/network/security/6_digital_certificate.html)
 
 
 （对了，有问题随时在评论区提出，我会及时回复，也欢迎加入学习交流群一起讨论~）
