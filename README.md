@@ -55,6 +55,7 @@
 
 * [公众号](https://mp.weixin.qq.com/s/uq67R4jHpYkbMUQqIBgpHA)
 
+* [ChatGPT 代充值](https://github.com/annoycl/recharge-chatgpt-plus)
 
 
 ### License
