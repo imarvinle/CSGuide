@@ -19,6 +19,7 @@
 * 👉 **[《互联网校招指北》](/docs/offer/)** ：互联网校招流程、复习方法、简历相关指南。
 
 * 👉 **[《C++面试指北》](/docs/cpp/)** ： 针对 C++ 面试的快速突击知识点总结。
+* [ChatGPT一键充值](https://getgpt.pro/github-csguide): 可快速可靠升级 GPT Plus
 
 ---
 
